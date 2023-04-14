@@ -45,3 +45,5 @@ def intervju(request):
 
 def kontakt(request):
      return render(request, "kontakt.html")
+
+

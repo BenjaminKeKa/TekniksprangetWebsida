@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% spaceless %}
+
+{% for intervju in intervjun %}
+
+<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+
+<center>
+
+<div class="card" data-intervju="1"; style="width: 36rem; border:none">
+  <img class="card-img-top" src="{{ intervju.image }}" alt="Card image cap">
+
+  <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+
+  <div class="card-body">
+    <h3 class="card-title">{{ intervju.titel }}</h3>
+    <p class="card-text">{{ intervju.front }}</p>
+
+    <p class="card-text">{{ intervju.front }}<span id="dots">...</span><span id="more">{{ intervju.summary }}</span></p>
+
+      <div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+  </div>
+  </div>
+      <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Läs mer</a>
+    <button onclick="myFunction()" id="myBtn"; class="btn alert-success">Läs mer</button>
+
+</div>
+
+    </center>
+
+<wrapper>
+<p>
+  <a class="btn btn-success" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Läs mer</a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+</p>
+
+
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+  </div>
+</div>
+</wrapper>
+
+
+
+{% endfor %}
+
+{% endspaceless %}
+{% endblock %}
+
+
+
+
+<div class="card" style="width: 36rem; border:none;">
+  <img class="card-img-top" src="{{ intervju.image }}" alt="Card image cap">
+
+  <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+    </div>
+<div class="card" data-intervju="{{ intervju.par_ten}}" style="border:none">
+    <h3 class="card-title">{{ intervju.titel }}</h3>
+
+    <p>
+      {{ intervju.front }}
+        <span class="dots">...</span>
+        <span class="more" style="display: none;">{{ intervju.summary }}</span>
+    </p>
+    <button onclick="readMore('{{ intervju.par_ten }}')" id="myBtn";
+            class="btn alert-success" style="width: 9rem;">Läs mer</button>
+</div>
+<br>
+
+
+
+<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+
+<center>
+
+<div class="card" data-intervju="1"; style="width: 36rem; border:none">
+  <img class="card-img-top" src="{{ intervju.image }}" alt="Card image cap">
+
+  <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+
+  <div class="card-body">
+    <h3 class="card-title">{{ intervju.titel }}</h3>
+    <p class="card-text">{{ intervju.front }}</p>
+
+    <p class="card-text">{{ intervju.front }}<span id="dots">...</span><span id="more">{{ intervju.summary }}</span></p>
+    <button onclick="myFunction()" id="myBtn"; class="btn alert-success">Läs mer</button>
+
+  </div>
+</div>
+
+    </center>
+
+
+
+
+
+
+
+
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<head>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+  <style>body{
+    padding: 0px;
+    margin: 0;
+}
+.post{
+    font-family: "Poppins",sans-serif;
+}
+.post p{
+    font-size: 14px;
+}
+.post button{
+    padding: 10px;
+    background-color: #ff0268;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.post.not(:last-child){
+    margin-bottom: 50px;
+}
+.hide{
+    display: none;
+}
+</style>
+
+</head>
+<body>
+<center>
+<section>
+  <div class="post">
+    <h1>Post Title 1</h1>
+    <p class="content">Lorem, ipsum dolor sit amet consctetur adipisscing elit. </p>
+    <button onclick="readMore(this)">Read More</button>
+  </div>
+  <div class="post">
+    <h1>Post Title 2</h1>
+    <p class="content">Lorem, ipsum dolor sit amet consctetur adipisscing elit. maxime numquam debitis deserunt commodi laborum. Quasi consequuntur error assumenda nisi laboriosam, vel repudiandae ipsam consequatur! Omnis nisi illo ipsa rem laborum quidem aliquid nesciunt minima ut fugit quod blanditiis quis ullam? Corrupti debitis nisi praesentium odit perspiciatis aliquid?</p>
+    <button onclick="readMore(this)">Read More</button>
+  </div>
+  <div class="post">
+    <h1>Post Title 3</h1>
+    <p class="content">Lorem, ipsum dolor sit amet consctetur adipisscing elit. maxime numquam debitis deserunt commodi laborum. Quasi consequuntur error assumenda nisi laboriosam, vel repudiandae ipsam consequatur! Omnis nisi illo ipsa rem laborum quidem aliquid nesciunt minima ut fugit quod blanditiis quis ullam? Corrupti debitis nisi praesentium odit perspiciatis aliquid?</p>
+    <button onclick="readMore(this)">Read More</button>
+  </div>
+</section>
+  </center>
+<script scr="index.js"></script>
+<script>
+
+let noOfCharac = 150;
+let contents = document.querySelectorAll(".content");
+contents.forEach(content => {
+
+       if(content.textContent.length < noOfCharac){
+        content.nextElementSibling.style.display = "none";
+       }
+       else{
+        let displayText = content.textContent.slice(0,noOfCharac);
+        let moreText = content.textContent.slice(noOfCharac);
+        content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+       }
+});
+
+function readMore(btn){
+    let post = btn.parentElement;
+    post.querySelector(".dots").classList.toggle("hide");
+    post.querySelector(".more").classList.toggle("hide");
+    btn.textContent == "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More";
+}
+
+</script>
+
+</body>
+
+{% endblock %}
+

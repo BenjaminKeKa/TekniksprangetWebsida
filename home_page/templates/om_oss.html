@@ -21,7 +21,7 @@
 <h1 class="display-2">Om oss</h1>
 
 
-<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+<br>
 
 
 {% for summary_om_oss in s_om_oss %}
@@ -36,11 +36,11 @@
 </div>
 {% endfor %}
 
-<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+<br>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+{% for snabbfakta in snabbfaktan %}
 
 
-<div class="row">
-    {% for snabbfakta in snabbfaktan %}
     <div class="col">
         <div class="card-deck">
             <div class="card text-success alert-primary border-success">
@@ -56,7 +56,7 @@
                 <div class="card text-danger">
                     <div class="card-header">{{ snabbfakta.head_quote }}</div>
 
-                    <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+                    <br>
 
 
                     <div class="card-body">
@@ -69,25 +69,25 @@
                     </div>
 
                 </div>
-                <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
-                <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+                <br>
+                <br>
             </div>
 
 
         </div>
     </div>
 
-    <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
-    <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+    <br>
+    <br>
 
 
-    {% endfor %}
 
-</div>
 
-<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
-<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
 
+   {% endfor %}
+    </div>
+<br>
+<br>
 {% endspaceless %}
 {% endblock %}
 
