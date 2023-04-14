@@ -1,0 +1,21 @@
+.carousel-item {
+            height:42rem;
+            left:27rem;
+            position: relative;
+
+        }
+        .carousel-image {
+            width:40rem;
+            height:20rem;
+            position: relative;
+
+        }
+        .carousel-button_boxes {
+            position: relative;
+            top:5rem;
+        }
+        .container {
+            text-align:center;
+            position:static;
+            right:20rem;
+        }
