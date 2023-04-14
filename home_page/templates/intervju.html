@@ -1,29 +1,166 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% spaceless %}
 
-{% for intervju in intervjun %}
 
-<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
-<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+<head>
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+  <style>body{
+    padding: 0px;
+    margin: 20;
+}
+.post{
+    font-family: "Poppins",sans-serif;
+}
+.post p{
+    font-size: 15px;
+}
+.post img{
+    border:none;
+    padding: 10;
+    width: 36rem;
+    higth: 2rem;
+}
+.post button{
+    padding: 10px;
+    background-color: #eacef4;
+    color: #a91fdb;
+    border: none;
+    cursor: pointer;
+}
+.post.not(:last-child){
+    margin-bottom: 50px;
+}
+.hide{
+    display: none;
+}
+</style>
+    <style>
+        *{scroll-behavior: smooth;
+            }
+        .scrollTop{
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 10px 15px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+            border-radius: 1px solid #fff;
+            cursor: pointer;
+            transition: all 0.5s ease 0s;
+            }
+        .scrollTop:hover{
+            background-color: #fed2f2;
+            color: #000;
+            }
+        .boldText{
+            font-family: Calibri;
+            font-weight:bold;
+            width: 36rem;
+            justify-content: center;
+        }
+        .centreradDiv{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
 <center>
+<h1 class="display-1">Intervjuer</h1>
 
-<div class="card" style="width: 36rem; border:none;">
-  <img class="card-img-top" src="{{ intervju.image }}" alt="Card image cap">
-
-  <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
-
-  <div class="card-body">
-    <h3 class="card-title">{{ intervju.titel }}</h3>
-    <p class="card-text">{{ intervju.front }}</p>
-    <a href="{{ intervju.par_ten }}" class="btn alert-success">Läs mer</a>
-  </div>
-</div>
     </center>
 
+{% for intervju in intervjun %}
+<center>
+<section>
+    <br>
+    <br>
+
+
+  <div style="width: 36rem" class="post">
+
+  <img class="card-img-top" style="width: 36rem; border:none" src="{{ intervju.image }}" alt="Card image cap">
+      <br>
+      <br>
+
+    <h1 class="purpleText">{{ intervju.titel }}</h1>
+    <p class="boldText">{{ intervju.summary }}</p>
+      <div class="content">
+    <p style="width: 36rem">{{ intervju.par_one }}</p>
+          <img src="{{ intervju.par_two }}" alt="">
+      <p style="width: 36rem">{{ intervju.par_three }}</p>
+          <img src="{{ intervju.par_four}}" alt="">
+      <p style="width: 36rem">{{ intervju.par_five }}</p>
+          <img src="{{ intervju.par_six }}" alt="">
+      <p style="width: 36rem">{{ intervju.par_seven }}</p>
+          <img src="{{ intervju.par_eight }}" alt="">
+      <p style="width: 36rem">{{ intervju.par_nine }}</p>
+          <img src="{{ intervju.par_ten }}" alt="">
+          </div>
+      <br>
+    <button onclick="readMore(this)">Läs mer</button>
+        <br>
+    <br>
+ <hr class="centreradDiv">
+  </div>
+
+
+    </div>
+</section>
+
+  </center>
 {% endfor %}
 
-{% endspaceless %}
+<div onclick="scrollToTop()" class="scrollTop">TILL TOPPEN</div>
+
+<br>
+<br>
+<br>
+
+<script scr="index.js"></script>
+
+<script>
+    function scrollToTop(){
+        window.scrollTo(0, 0);
+}
+</script>
+
+<script>
+
+let noOfCharac = 100;
+let contents = document.querySelectorAll(".content");
+contents.forEach(content => {
+
+       if(content.textContent.length < noOfCharac){
+        content.nextElementSibling.style.display = "none";
+       }
+       else{
+        let displayText = content.textContent.slice(0,noOfCharac);
+        let moreText = content.textContent.slice(noOfCharac);
+        content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+       }
+});
+
+function readMore(btn){
+    let post = btn.parentElement;
+    post.querySelector(".dots").classList.toggle("hide");
+    post.querySelector(".more").classList.toggle("hide");
+    btn.textContent == "Läs mer" ? btn.textContent = "Läs mindre" : btn.textContent = "Läs mer";
+}
+
+</script>
+
+</body>
+
+
 {% endblock %}
+
