@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+
+<body>
+<div style="text-align:center;">
+
+    <h1>Tekniksprånget på Region Skåne</h1>
+    <h3>Strålningsfysik</h3>
+    <h3><pre>
+
+
+
+
+    </pre></h3>
+
+</div>
+    <div class="row">
+        {% for home in home_page %}
+         <div class="col">
+            {% endfor %}
+        </div>
+    </div>
+
+
+<!-- Style for carousel
+    .carousel-item bestämmer var och utseendet på fönstret till bilden i carouselen
+    .carousel-image bestämmer formatet på bilderna i carouselen
+    -->
+ <style>
+
+        .carousel-item {
+            height:42rem;
+            left:25rem;
+            position: relative;
+        }
+        .carousel-image {
+            width:40rem;
+            height:20rem;
+            position: relative;
+            text-align:center;
+        }
+        .carousel-button_boxes {
+            position: relative;
+            top:5rem;
+        }
+        .container {
+            text-align:center;
+            position:relative;
+            right:20rem;
+        }
+ </style>
+
+
+    <!-- Carousel med bilder -->
+    <div style="carousel-background">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-button_boxes">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="carousel-image">
+                        <img src="{% static 'home_page/images/slide1.jpg' %}" style="carousel-image"
+                         class="img-fluid d-block w-100" alt="Image not found">
+                    </div>
+                    <div class="container">
+                        <h1>Example headlinge</h1>
+                        <p>Hej halloj</p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                            sign up today
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="{% static 'home_page/images/slide2.png' %}" style="carousel-image"
+                             class="img-fluid d-block w-100" alt="Image not found">
+                    </div>
+                    <div class="container">
+                        <h1>Example headlinge</h1>
+                        <p>Hej halloj</p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                            sign up today
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+                <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+
+
+        </div>
+    </div>
+</body>
+{% endblock %}
+
+
+<!-- .carousel {
+            margin-left: 15%;
+            margin-right: 25%;
+            bottom:0;
+            position:fixed;
+            width:75%;
+        } -->

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% spaceless %}
+
+{% for intervju in intervjun %}
+
+<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+
+<center>
+
+<div class="card" style="width: 36rem; border:none;">
+  <img class="card-img-top" src="{{ intervju.image }}" alt="Card image cap">
+
+  <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+
+  <div class="card-body">
+    <h3 class="card-title">{{ intervju.titel }}</h3>
+    <p class="card-text">{{ intervju.front }}</p>
+    <a href="{{ intervju.par_ten }}" class="btn alert-success">Läs mer</a>
+  </div>
+</div>
+    </center>
+
+{% endfor %}
+
+{% endspaceless %}
+{% endblock %}

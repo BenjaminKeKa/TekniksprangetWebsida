@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+{% spaceless %}
+<!--       <h1>Om oss</h1>
+       <div class="row">
+           {% for summary_om_oss in s_om_oss %}
+           <div class="col">
+               <div class="card">
+                   <div class="card-body">
+                       {{ summary_om_oss.summary }}
+                   </div>
+               </div>
+
+           </div>
+           {% endfor %}
+       </div>     -->
+
+
+<h1 class="display-2">Om oss</h1>
+
+
+<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+
+
+{% for summary_om_oss in s_om_oss %}
+<div class="col">
+    <div class="jumbotron">
+        <h1 class="display-4; purpleText">Sammanfattning</h1>
+        <p class="lead">{{ summary_om_oss.titel }}</p>
+        <hr class="my-4">
+        <p>{{ summary_om_oss.summary }}</p>
+    </div>
+
+</div>
+{% endfor %}
+
+<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+
+
+<div class="row">
+    {% for snabbfakta in snabbfaktan %}
+    <div class="col">
+        <div class="card-deck">
+            <div class="card text-success alert-primary border-success">
+                <img src="{{ snabbfakta.image }}"
+                     class="card-img-top" alt="Bild på {{ snabbfakta.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ snabbfakta.name }}</h5>
+                    <p class="card-text">{{ snabbfakta.text }}</p>
+                    <p class="card-text"><small class="text-muted">{{ snabbfakta.last_updated }}</small></p>
+                </div>
+
+
+                <div class="card text-danger">
+                    <div class="card-header">{{ snabbfakta.head_quote }}</div>
+
+                    <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+
+
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>{{ snabbfakta.quote }}</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">
+                                {{ snabbfakta.quote_sayer }}</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+
+                </div>
+                <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+                <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+    <div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+
+
+    {% endfor %}
+
+</div>
+
+<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+<div class='description' contenteditable='true' placeholder='{{my_placeholder}}'></div>
+
+{% endspaceless %}
+{% endblock %}
+
