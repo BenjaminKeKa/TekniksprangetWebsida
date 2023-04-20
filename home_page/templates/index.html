@@ -4,29 +4,11 @@
 {% load static %}
 
 <body>
-<div style="text-align:center; position: static;">
+<div style="text-align:center; position:static; padding:20px">
 
     <h1>Tekniksprånget på Region Skåne</h1>
     <h3>Strålningsfysik</h3>
     <h3><pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -52,80 +34,86 @@
     -->
  <style>
         .carousel-item {
-            height:42rem;
+            height:50rem;
+            width:60rem;
             position: relative;
         }
         .carousel-image {
-            width:30rem;
-            height:20rem;
-            position: relative;
-
-        }
-        .carousel-button_boxes {
-            position: relative;
-            top:40rem;
-        }
-        .container {
-            text-align:center;
             position:relative;
-
-        }
-        .carousel-background {
-            text-align: center;
-            position: absolute;
-            left: 30%;
-            height: 50rem;
-            width: 40rem;
+            width:50rem;
+            height:36rem;
             display: flex;
             justify-content: center;
-            background-color: #A52A2A;
+            left:5rem;
+        }
+
+        .carousel-background {
+            position: relative;
+            height: 60rem;
+            width: 60rem;
+            display: flex;
+            justify-content: center;
+            background-color:black;
         }
  </style>
 
 
     <!-- Carousel med bilder -->
-    <div class="carousel-background">
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="d-flex justify-content-center">
+        <div class="carousel-background">
+            <div id="myCarousel" class="carousel slide">
 
-            <div class="carousel-button_boxes">
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                    </ol>
-            </div>
-
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <div class="carousel-image">
-                        <img src="{% static 'home_page/images/slide1.jpg' %}" style="carousel-image"
-                         class="img-fluid d-block w-100" alt="Image not found">
-                    </div>
-                    <div class="container">
-                        <h1>Example headlinge</h1>
-                        <p>Hej halloj</p>
-                        <a href="#" class="btn btn-lg btn-primary">
-                            sign up today
-                        </a>
-                    </div>
+                <div class="carousel-button_boxes">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="carousel-image">
-                        <img src="{% static 'home_page/images/slide2.png' %}" style="carousel-image"
-                             class="img-fluid d-block w-100" alt="Image not found">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="carousel-image">
+                            <div class="d-flex justify-content-center">
+                                <img src="{% static 'home_page/images/slide1.jpg' %}" style="carousel-image"
+                                 class="img-fluid d-block w-100" alt="Image not found">
+                            </div>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block" style="position:absolute; top:40rem">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
                     </div>
-                    <div class="container">
-                        <h1>Example headlinge</h1>
-                        <p>Hej halloj</p>
-                        <a href="#" class="btn btn-lg btn-primary">
-                            sign up today
-                        </a>
+
+                    <div class="carousel-item">
+                        <div class="carousel-image">
+                            <div class="d-flex justify-content-center">
+                                <img src="{% static 'home_page/images/slide2.png' %}" style="carousel-image"
+                                     class="img-fluid d-block w-100" alt="Image not found">
+                            </div>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block" style="position:absolute; top:40rem">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
                     </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-image">
+                            <div class="d-flex justify-content-center">
+                                <img src="{% static 'home_page/images/slide1.jpg' %}" style="carousel-image"
+                                 class="img-fluid d-block w-100" alt="Image not found">
+                            </div>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block" style="position:absolute; top:40rem">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+
                 </div>
-
             </div>
-
 
 
 
