@@ -18,7 +18,9 @@
 
     <title>LUS tekniksprång</title>
 
-        <style>
+
+     <!-- Lila reman nästan överst på sidan-->
+    <style>
         #footer {
             padding: 10px 10px 0px 10px;
             bottom: 100;
@@ -58,14 +60,17 @@
         font-size:20;
     }
      .dropdown-menu{
-        background-color: #a91fdb;
+        background-color: #A668B2;
         }
     .dropdown-item {
         position: relative;
     }
     .dropdown-item:hover{
-        background-color: #ca78e8
+        background-color: #eacef4;
         }
+        #ca78e8
+        #a91fdb;
+        #eacef4
 </style>
 
 
@@ -73,15 +78,15 @@
 
     <style>
     .footer{
-        background: #303036;
+        background: #fe9cfb;
         color: #d3d3d3;
-        height: 400px;
+        height: 300px;
         position: relative;
     }
 
     .footer .footer-content{
-        border: 1px solid red;
-        height: 350px;
+        border: 1px solid purple;
+        height: 250px;
     }
 
     .footer .footer-bottom{
@@ -117,11 +122,11 @@
 <body>
 
 <!-- Här är hela navbaren-->
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#eacef4">
 
 
     <!-- Tillbaka till huvudsidan -->
-    <a class="navbar-brand" href="/home_page/">LUS Tekniksprång</a>
+    <a class="navbar-brand" href="/home_page/" style="color: #630875; font-weight:bold">LUS Tekniksprång</a>
 
     <!-- Ger tre strecken till hela navbaren vid smalt format -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -136,14 +141,14 @@
 
             <!-- Om oss, kort berättelse om oss själva och dylikt -->
             <li class="nav-item active">
-                <a class="nav-link" href="/home_page/om_oss">Om oss<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/home_page/om_oss" style="color: purple">Om oss<span class="sr-only">(current)</span></a>
             </li>
 
 
             <!-- Om vårt arbete, dropdown meny med individuella projekt -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="NavDropVÅRTARBETE" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">Vårt arbete</a>
+                   aria-haspopup="true" aria-expanded="false" style="color: purple">Vårt arbete</a>
 
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="/home_page/vart_arbete">Vårt arbete</a>
@@ -158,7 +163,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="NavDropSTRÅLNINGSFYSIK" role="button"
                    data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">Strålningsfysik Region Skåne</a>
+                   aria-haspopup="true" aria-expanded="false" style="color: purple">Strålningsfysik Region Skåne</a>
 
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="/home_page/stralningsfysik">Strålningsfysik Region Skåne</a>
@@ -170,7 +175,7 @@
 
             <!--  Kontakt vid behov av svar på frågor -->
             <li class="nav-item active">
-                <a class="nav-link" href="/home_page/kontakt">Kontakt</a>
+                <a class="nav-link" href="/home_page/kontakt" style="color: purple">Kontakt</a>
             </li>
 
 
@@ -197,9 +202,6 @@
 
 
 <!-- PAGE WRAPPER -->
-<div class="page-wrapper">
-
-</div>
 
 
 <!--Footer-->
