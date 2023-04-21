@@ -4,21 +4,21 @@
 {% load static %}
 
 <body>
-<div style="text-align:center; position:static; padding:20px">
+<div style="text-align:center; padding:60px; position:static;">
 
-    <h1>Tekniksprånget på Region Skåne</h1>
-    <h3>Strålningsfysik</h3>
-    <h3><pre>
+    <h1 style="font-size:50px;">Tekniksprånget hos Region Skåne</h1>
+    <h3 style="font-size:30px">Strålningsfysiken på Lunds Universitetssjukhus</h3>
+
+    <h5><pre></pre></h5>
+        <div style="position:relative; width:60rem; left:10rem; font-size:20px;">
+            <p>Hej OCH välkommen till våran hemsida. Vi är ju då två människor som gått tekniksprånget på Strålfysiken på Lunds
+            universitetssjukhus under våren 2023. Syftet med denna hemsidan är att nå ut till er intresserade och berätta om
+            allt det vi gjort här med tekniksprånget och vilka våra arbetsgivare är. Ni SKA vara imponerade av denna hemsidan,
+            för vi är bäst.</p>
+        </div>
 
 
 
-
-
-
-
-
-
-    </pre></h3>
 </div>
     <div class="row">
         {% for home in home_page %}
@@ -35,11 +35,11 @@
  <style>
         .carousel-background {
             position: relative;
-            height: 60rem;
+            height: 50rem;
             width: 80rem;
             display: flex;
             justify-content: center;
-            background-color:#D3D3D3;
+            bacadkground-color:#462773;
             border-radius:3%;
         }
         .carousel-item {
@@ -49,18 +49,19 @@
         }
         .carousel-image {
             position:relative;
-            width:33rem;
-            height:25rem;
+            width:40rem;
+            height:30rem;
             left:5%;
-            top:17.5rem;
+            top:10rem;
         }
         .carousel-text {
             position:absolute;
-            top:30rem;
+            bottom:25%;
             left:40rem;
-            width:20rem;
+            width:40rem;
             text-align:left;
         }
+
  </style>
 
 
@@ -74,23 +75,75 @@
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
                         </ol>
                 </div>
 
                 <div class="carousel-inner">
 
-                    <div class="carousel-item active">
+                    <div class="carousel-item active"style="background-color:black;">
                         <div class="carousel-image">
                             <div class="d-flex justify-content-center">
-                                <img src="{% static 'home_page/carousel-images/slide1.jpg' %}" style="carousel-image"
-                                 class="img-fluid d-block w-100" alt="Image not found">
+                                <img src="{% static 'home_page/information-images/Strålfysiken_i_Lund.jpg' %}"
+                                     style="carousel-image; border-radius:5%" class="img-fluid d-block w-100"
+                                     alt="Image not found">
                             </div>
                         </div>
 
                         <div class="carousel-text">
                             <div class="carousel-caption d-none d-md-block" style="text-align:left;">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h1 style="font-size:50px;">Verksamheten på Strålfysiken</h1>
+                                <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
+                                av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
+                                snyggt och konkret sätt. Både för att främja tekniksprånget men också att viss upp ens
+                                kommunitiva förmågor.</p>
+                                <a href="/home_page/stralningsfysik" type="button" class="btn btn-outline-light">Nämen se här!
+                                Sikken fin frimärksbok min bäste herre har!</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item" style="background-color:red;">
+                        <div class="carousel-image">
+                            <div class="d-flex justify-content-center">
+                                <img src="{% static 'home_page/machine-images/TB04mörk.jpg' %}" style="carousel-image;
+                                border-radius:5%" class="img-fluid d-block w-100" alt="Image not found">
+                            </div>
+                        </div>
+
+                        <div class="carousel-text">
+                            <div class="carousel-caption d-none d-md-block" style="text-align:left;">
+                                <h1 style="font-size:50px;">Behandlings-maskinerna på Strålfysiken</h1>
+                                <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
+                                av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
+                                snyggt och konkret sätt. Både för att främja tekniksprånget men också att viss upp ens
+                                kommunitiva förmågor.</p>
+                                <a href="/home_page/utrustning" type="button" class="btn btn-outline-light">Nämen se här!
+                                Sikken fin frimärksbok min bäste herre har!</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item" style="background-color:yellow;">
+                        <div class="carousel-image">
+                            <div class="d-flex justify-content-center">
+                                <img src="{% static 'home_page/carousel-images/slide2.png' %}" style="carousel-image;
+                                border-radius:5%" class="img-fluid d-block w-100" alt="Image not found">
+                            </div>
+                        </div>
+
+                        <div class="carousel-text">
+                            <div class="carousel-caption d-none d-md-block" style="text-align:left;">
+                                <h1 style="font-size:50px;">Intervjuer med anställda</h1>
+                                <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
+                                av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
+                                snyggt och konkret sätt. Både för att främja tekniksprånget men också att viss upp ens
+                                kommunitiva förmågor.</p>
+                                <a href="/home_page/intervju" type="button" class="btn btn-outline-light">Nämen se här!
+                                Sikken fin frimärksbok min bäste herre har!</a>
                             </div>
                         </div>
                     </div>
@@ -99,15 +152,16 @@
                     <div class="carousel-item">
                         <div class="carousel-image">
                             <div class="d-flex justify-content-center">
-                                <img src="{% static 'home_page/carousel-images/slide2.png' %}" style="carousel-image"
-                                     class="img-fluid d-block w-100" alt="Image not found">
+                                <img src="{% static 'home_page/carousel-images/Dragskåpet100%färdigt.jpg' %}"
+                                     style="carousel-image; border-radius:5%" class="img-fluid d-block w-100"
+                                     alt="Image not found">
                             </div>
                         </div>
 
                         <div class="carousel-text">
                             <div class="carousel-caption d-none d-md-block" style="text-align:left;">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h1 style="font-size:50px;">Second slide label</h1>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -116,15 +170,21 @@
                     <div class="carousel-item">
                         <div class="carousel-image">
                             <div class="d-flex justify-content-center">
-                                <img src="{% static 'home_page/carousel-images/slide1.jpg' %}" style="carousel-image"
-                                 class="img-fluid d-block w-100" alt="Image not found">
+                                <img src="{% static 'home_page/carousel-images/ModelleringiCAD.png' %}"
+                                     style="carousel-image; border-radius:5%" class="img-fluid d-block w-100"
+                                     alt="Image not found">
                             </div>
                         </div>
 
                         <div class="carousel-text">
                             <div class="carousel-caption d-none d-md-block" style="text-align:left;">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h1 style="font-size:50px;">3D-modellering med CAD</h1>
+                                <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten
+                                av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
+                                snyggt och konkret sätt. Både för att främja tekniksprånget men också att viss upp ens
+                                kommunitiva förmågor.</p>
+                                <a href="/home_page/fusion" type="button" class="btn btn-outline-light">Nämen se här!
+                                Sikken fin frimärksbok min bäste herre har!</a>
                             </div>
                         </div>
                     </div>
