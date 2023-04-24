@@ -1,59 +1,197 @@
 {% extends "base.html" %}
 
 {% block content%}
+{% load static %}
+
+
+<style>
+    .body-section{
+        display: flex;
+        margin: 5px 10px;
+        max-width: 100%
+    }
+
+    h3{
+        padding: 3px;
+        font-size: 150%;
+        font-weight: bold;
+        background: #eacef4;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .sidebar{
+        width: 20%;
+        height: relative;
+        border-radius: 10px;
+        background-color: #ecebeb;
+        text-align: center;
+        color: black;
+        border: 2px solid purple;
+        font-size: 10;
+        border-spacing: 5px;
+        padding: 5px;
+    }
+
+
+    .main-body{
+        width: 68%;
+        height: relative;
+        border-radius: 15px;
+
+        text-align: center;
+        margin: 0 0 0 150px;
+        padding: 20px 150px 20px;
+    }
+
+
+@media (max-width: 770px){
+    .body-section{
+        display: block;
+    }
+   .main-body{
+        width: 100%;
+        height: relative;
+        margin: 10px 0 10px 0;
+   }
+   .sidebar{
+        width: 100%;
+        height: 70px;
+        text-align: center;
+   }
+}
+
+.fakta{
+    font-size: 14px;
+}
+
+.underrubrik{
+    color: purple;
+    font-weight: bold;
+}
+
+
+</style>
+
+
 <div>
-<center>
-    <h1 class="display-2">Strålningsfysik Region Skåne</h1>
+    <center>
+        <br>
+        <h1 class="display-2">Strålningsfysik Region Skåne</h1>
 
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <img src="" style="max-width: 70%; height: auto" alt="Bild på 'Färglada huset'">
-    <p class="float-end" style="right: 50px">BildtextBildtextBildtext</p>
-    <br>
-    <br>
-    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="{% static 'home_page/information-images/Strålfysikhuset.jpg' %}" style="max-width: 70%; height: auto"
+             alt="Bild på 'Färglada huset'">
+        <p style="text-align: right; max-width: 70%">Strålfysikhuset - a.k.a Färgglada Huset</p>
+        <br>
+        <br>
+        <br>
 
-   <!--  <table class="infobox" style="border-spacing:5px">
-        <tbody>
-            <tr>
-                <td colspan="2" class style="padding:2px; text-align:center; font-size: 125%; font-weight: bold; background: #b0c4de">Snabbfakta
-                </td>
-            </tr>
-        </tbody>
-        </table> -->
+        <!--  <table class="infobox" style="border-spacing:5px">
+             <tbody>
+                 <tr>
+                     <td colspan="2" class style="padding:2px; text-align:center; font-size: 125%; font-weight: bold; background: #b0c4de">Snabbfakta
+                     </td>
+                 </tr>
+             </tbody>
+             </table> -->
+
+        <div class="body-section">
+
+
+            <div class="main-body">
+                <div style="max-width:90%">
+                    <h2>Historia</h2>
+                    <p>här skriver vi lite om Stålfysikens historia på region Skåne</p>
+                    <br>
+                    <br>
+                    <h2>Administrativ struktur</h2>
+                    <p>Här skriver vi lite om vad det nu handlar om</p>
+                    <br><br>
+                    <h2>Univeristetssjukhus</h2>
+                    <p>Här skriver vi lite om hur det fungerar att tillhöra ett universitetssjukhus. Kanske något om
+                        Flash??</p>
+                    <br><br>
+                    <h2>Yrkesgrupper</h2>
+                    <p>Här brättar vi lite kortfattat om vilka yrkesgrupper som finns här och va de gör. Kankse hänvisar
+                        till intervjuerna?? dfhkjdfgdf gdfbd fhgejrysegs hfserfyuqrtf sgd hgsfeawrewtfegadasdfg hsdf uae
+                        rkawuvd</p>
+                    <br><br><br>
+
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <h3>Info</h3>
+                <table class="table table-borderless">
+                    <p class="underrubrik">Strålningsfysik</p>
+                    <tbody>
+                    <tr>
+                        <th scope="row" class="fakta">Antal ingenjörer:</th>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="fakta">Antal sjukhusfysiker:</th>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="fakta">Antal maskiner</th>
+                        <td colspan="2">10</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            </div>
 
 
 
-    <div style="max-width:70%">
-    <h2>Historia</h2>
-    <p>här skriver vi lite om Stålfysikens historia på region Skåne</p>
-    <br>
-    <br>
-    <h2>Administrativ struktur</h2>
-    <p>Här skriver vi lite om vad det nu handlar om</p>
-    <br><br>
-    <h2>Univeristetssjukhus</h2>
-    <p>Här skriver vi lite om hur det fungerar att tillhöra ett universitetssjukhus. Kanske något om Flash??</p>
-    <br><br>
-    <h2>Yrkesgrupper</h2>
-    <p>Här brättar vi lite kortfattat om vilka yrkesgrupper som finns här och va de gör. Kankse hänvisar till intervjuerna?? dfhkjdfgdf gdfbd fhgejrysegs hfserfyuqrtf sgd hgsfeawrewtfegadasdfg hsdf uae rkawuvd</p>
-    <br><br><br>
-        <hr>
-    <h2>Region Skåne</h2>
-    <p>Här skriver vi lite om Region Skåne i allmänhet</p>
+
+
+
+        <div class="body-section">
+
+            <div class="main-body">
+                <div style="max-width:90%">
+       <hr>
+                    <h2>Region Skåne</h2>
+                    <p>Här skriver vi lite om Region Skåne i allmänhet</p>
+
+                </div>
+            </div>
+            <div class="sidebar">
+                <h3>Info</h3>
+                <table class="table table-borderless">
+                    <p class="underrubrik">Region Skåne</p>
+
+                    <tbody>
+                    <tr>
+                        <th scope="row" class="fakta">Antal ingenjörer:</th>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="fakta">Antal sjukhusfysiker:</th>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="fakta">Antal maskiner</th>
+                        <td colspan="2">10</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
         </div>
-
-
- </center>
+    </center>
 </div>
 
 {% endblock %}
 
 
-     <div class="infobox bg-copper-50">
+<div class="infobox bg-copper-50">
     <p>Infobox</p>
-    </div>
+</div>
