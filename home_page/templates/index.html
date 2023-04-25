@@ -4,22 +4,21 @@
 {% load static %}
 
 <body>
-<div style="text-align:center; padding:60px; position:static;">
+    <div style="text-align:center; padding:60px; position:static;">
 
-    <h1 style="font-size:50px;">Tekniksprånget hos Region Skåne</h1>
-    <h3 style="font-size:30px">Strålningsfysiken på Lunds Universitetssjukhus</h3>
+        <h1 style="font-size:50px;">Tekniksprånget hos Region Skåne</h1>
+        <h3 style="font-size:30px">Strålningsfysiken på Lunds Universitetssjukhus</h3>
 
-    <h5><pre></pre></h5>
-        <div style="position:relative; width:60rem; left:10rem; font-size:20px;">
-            <p>Hej OCH välkommen till våran hemsida. Vi är ju då två människor som gått tekniksprånget på Strålfysiken på Lunds
-            universitetssjukhus under våren 2023. Syftet med denna hemsidan är att nå ut till er intresserade och berätta om
-            allt det vi gjort här med tekniksprånget och vilka våra arbetsgivare är. Ni SKA vara imponerade av denna hemsidan,
-            för vi är bäst.</p>
-        </div>
+        <br>
 
+            <div style="position:relative; width:60rem; left:10rem; font-size:20px;">
+                <p>Hej OCH välkommen till våran hemsida. Vi är ju då två människor som gått tekniksprånget på Strålfysiken på Lunds
+                universitetssjukhus under våren 2023. Syftet med denna hemsidan är att nå ut till er intresserade och berätta om
+                allt det vi gjort här med tekniksprånget och vilka våra arbetsgivare är. Ni SKA vara imponerade av denna hemsidan,
+                för vi är bäst.</p>
+            </div>
 
-
-</div>
+    </div>
     <div class="row">
         {% for home in home_page %}
          <div class="col">
@@ -32,7 +31,7 @@
     .carousel-item bestämmer var och utseendet på fönstret till bilden i carouselen
     .carousel-image bestämmrr formatet på bilderna i carouselen
     -->
- <style>
+    <style>
         .carousel-background {
             position: relative;
             height: 50rem;
@@ -62,7 +61,7 @@
             text-align:left;
         }
 
- </style>
+    </style>
 
 
     <!-- Carousel med bilder -->
@@ -127,6 +126,29 @@
                     </div>
 
 
+                    <div class="carousel-item">
+                        <div class="carousel-image">
+                            <div class="d-flex justify-content-center">
+                                <img src="{% static 'home_page/carousel-images/Dragskåpet100%färdigt.jpg' %}"
+                                     style="carousel-image; border-radius:5%" class="img-fluid d-block w-100"
+                                     alt="Image not found">
+                            </div>
+                        </div>
+
+                        <div class="carousel-text">
+                            <div class="carousel-caption d-none d-md-block" style="text-align:left;">
+                                <h1 style="font-size:50px;">Om oss</h1>
+                                <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
+                                av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
+                                snyggt och konkret sätt. Både för att främja tekniksprånget men också att viss upp ens
+                                kommunitiva förmågor.</p>
+                                <a href="/home_page/om_oss" type="button" class="btn btn-outline-light">Nämen se här!
+                                Sikken fin frimärksbok min bäste herre har!</a>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="carousel-item" style="badckground-color:yellow;">
                         <div class="carousel-image">
                             <div class="d-flex justify-content-center">
@@ -144,24 +166,6 @@
                                 kommunitiva förmågor.</p>
                                 <a href="/home_page/intervju" type="button" class="btn btn-outline-light">Nämen se här!
                                 Sikken fin frimärksbok min bäste herre har!</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="carousel-image">
-                            <div class="d-flex justify-content-center">
-                                <img src="{% static 'home_page/carousel-images/Dragskåpet100%färdigt.jpg' %}"
-                                     style="carousel-image; border-radius:5%" class="img-fluid d-block w-100"
-                                     alt="Image not found">
-                            </div>
-                        </div>
-
-                        <div class="carousel-text">
-                            <div class="carousel-caption d-none d-md-block" style="text-align:left;">
-                                <h1 style="font-size:50px;">Second slide label</h1>
-                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -195,6 +199,21 @@
 
 
         </div>
+    </div>
+
+    <div class="d-flex justify-content-center"><div style="width:90rem;"><hr style="height:1px; border-width:0 color:black; background-color:black"></div></div>
+
+    <!-- Litegran om Tekniksprånget -->
+    <div style="text-align:center; padding:60px; position:static;">
+
+        <h3 style="font-size:30px">Vad är Tekniksprånget?</h3>
+
+        <br>
+
+            <div style="position:relative; width:60rem; left:10rem; font-size:20px;">
+                <p>Sannolikheten att du inte vet vad tekniksprånget är uppskattar vi som väldigt låg, men vi är fult medvetna att kunskap aldrig ska tas för givet. Därför tänker vi berätta lite gran om tekniksprånget här och nu. Buckle your seatbealts buckaroo, we are going into the outback</p>
+            </div>
+
     </div>
 
 </body>

@@ -2,41 +2,42 @@
 
 {% block content %}
 
+{% load static %}
 
 <head>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
 
-  <style>body{
-    padding: 0px;
-    margin: 20;
-}
-.post{
-    font-family: "Poppins",sans-serif;
-}
-.post p{
-    font-size: 15px;
-}
-.post img{
-    border:none;
-    padding: 10;
-    width: 36rem;
-    higth: 2rem;
-}
-.post button{
-    padding: 10px;
-    background-color: #eacef4;
-    color: #a91fdb;
-    border: none;
-    cursor: pointer;
-}
-.post.not(:last-child){
-    margin-bottom: 50px;
-}
-.hide{
-    display: none;
-}
-</style>
+    <style>
+        body {
+            padding: 0px;
+            margin: 20;
+        }
+        .post {
+            font-family: Geneva,sans-serif;
+        }
+        .post p {
+            font-size: 15px;
+        }
+        .post img {
+            border:none;
+            width: 36rem;
+            height: 27rem;
+        }
+        .post button {
+            padding: 10px;
+            background-color: #eacef4;
+            color: #a91fdb;
+            border: none;
+            cursor: pointer;
+        }
+        .post.not(:last-child) {
+            margin-bottom: 50px;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
     <style>
         *{scroll-behavior: smooth;
             }
@@ -72,59 +73,61 @@
     </style>
 
 </head>
-
 <body>
-<center>
-<h1 class="display-1">Intervjuer</h1>
-
-    </center>
-
-{% for intervju in intervjun %}
-<center>
-<section>
-    <br>
-    <br>
 
 
-  <div style="width: 36rem" class="post">
-
-  <img class="card-img-top" style="width: 36rem; border:none" src="{{ intervju.image }}" alt="Card image cap">
-      <br>
-      <br>
-
-    <h1 class="purpleText">{{ intervju.titel }}</h1>
-    <p class="boldText">{{ intervju.summary }}</p>
-      <div class="content">
-    <p style="width: 36rem">{{ intervju.par_one }}</p>
-          <img src="{{ intervju.par_two }}" alt="">
-      <p style="width: 36rem">{{ intervju.par_three }}</p>
-          <img src="{{ intervju.par_four}}" alt="">
-      <p style="width: 36rem">{{ intervju.par_five }}</p>
-          <img src="{{ intervju.par_six }}" alt="">
-      <p style="width: 36rem">{{ intervju.par_seven }}</p>
-          <img src="{{ intervju.par_eight }}" alt="">
-      <p style="width: 36rem">{{ intervju.par_nine }}</p>
-          <img src="{{ intervju.par_ten }}" alt="">
-          </div>
-      <br>
-    <button onclick="readMore(this)">Läs mer</button>
-        <br>
-    <br>
- <hr class="centreradDiv">
-  </div>
-
-
+    <h1 style="font-size:60px; text-align:center; font-family:Geneva,sans-serif;">Intervjuer med anställda</h1>
+    <div class="d-flex justify-content-center">
+        <div style="width:50rem; text-align:center;">
+            <p>Här hittar du intervjuer på med anställda och deras olika arbetsroller på strålningsfysiken. Ingenjörer. sjukhusfysiker, sjuksköterskor, och läkare kan alla hittas här och kan ge er inblick i alla de olika rollerna som krävs för att kunna bedriva verksamheten på Strålningsfysiken</p>
+        </div>
     </div>
-</section>
 
-  </center>
-{% endfor %}
+    <div class="d-flex justify-content-center" style="margin:5% 0;">
+        <div style="width: 50rem" class="post">
+
+            <h1 style="font-size:60px; text-align:center; position:relative; bottom:.5rem;">Intervju med TB04</h1>
+
+            <div class="d-flex justify-content-center">
+                <img src="{% static 'home_page/machine-images/TB04ljus.jpg' %}" alt="BILD">
+            </div>
+            <hr>
+            <div class="content" style="text-align:center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <br>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. i vatten</p>
+            </div>
+
+            <button onclick="readMore(this)" style="text-align:center; position:relative; left:22.5rem; top:.75rem;">Läs mer</button>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="d-flex justify-content-center" style="margin:5% 0;">
+        <div style="width: 50rem" class="post">
+
+            <h1 style="font-size:60px; text-align:center; position:relative; bottom:.5rem;">Intervju med TB04</h1>
+
+            <div class="d-flex justify-content-center">
+                <img src="{% static 'home_page/machine-images/TB04ljus.jpg' %}" alt="BILD">
+            </div>
+            <hr>
+            <div class="content" style="text-align:center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. i vatten</p>
+            </div>
+
+            <button onclick="readMore(this)" style="text-align:center; position:relative; left:22.5rem; top:.75rem;">Läs mer</button>
+
+        </div>
+    </div>
+
 
 <div onclick="scrollToTop()" class="scrollTop">TILL TOPPEN</div>
-
-<br>
-<br>
-<br>
 
 
 
@@ -133,7 +136,6 @@
         window.scrollTo(0, 0);
 }
 </script>
-
 <script>
 
 let noOfCharac = 100;
@@ -158,6 +160,8 @@ function readMore(btn){
 }
 
 </script>
+
+
 
 </body>
 
