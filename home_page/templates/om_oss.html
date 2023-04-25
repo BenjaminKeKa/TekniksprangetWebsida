@@ -3,19 +3,14 @@
 
 {% block content %}
 {% spaceless %}
-<!--       <h1>Om oss</h1>
-       <div class="row">
-           {% for summary_om_oss in s_om_oss %}
-           <div class="col">
-               <div class="card">
-                   <div class="card-body">
-                       {{ summary_om_oss.summary }}
-                   </div>
-               </div>
 
-           </div>
-           {% endfor %}
-       </div>     -->
+<style>
+    .card-body h5{
+        color: purple;
+        font-width: bold;
+    }
+</style>
+
 
 <center>
 
@@ -30,7 +25,7 @@
     <div class="jumbotron" style="background-color: #fef8fe">
     <!--    <h1 class="display-4; purpleText">Sammanfattning</h1> -->
         <p class="lead">Hur vi kom hit</p>
-        <hr class="my-4">
+        <hr class="my-4" style="color: purple;">
         <p>{{ summary_om_oss.summary }}</p>
     </div>
 
@@ -44,7 +39,7 @@
 
     <div class="col">
         <div class="card-deck">
-            <div class="card text-success alert-primary border-success">
+            <div class="card" style="border-color: #eacef4;">
                 <img src="{{ snabbfakta.image }}"
                      class="card-img-top" alt="Bild på {{ snabbfakta.name }}">
                 <div class="card-body">
