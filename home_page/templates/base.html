@@ -11,15 +11,18 @@
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 
-<!-- css cdn link -->
-  <link rel=“stylesheet” type="text/css" href=“styles.css”>
+    <!-- css cdn link -->
+    <link rel=“stylesheet” type="text/css" href=“styles.css”>
 
     <title>LUS tekniksprång</title>
 
 
-     <!-- Lila reman nästan överst på sidan-->
+    <!-- Lila reman nästan överst på sidan-->
     <style>
         #footer {
             padding: 10px 10px 0px 10px;
@@ -42,10 +45,11 @@
             text-color; white
 
         }
+
     </style>
 
     <!-- Olika modeller av text som kan appliceras i alla html-filer. Fler modeller kan adderas under "style" nedan -->
-<style>
+    <style>
     .purpleText
     {
         color:purple;
@@ -71,7 +75,8 @@
         #ca78e8
         #a91fdb;
         #eacef4
-</style>
+
+    </style>
 
 
     <!-- FOOTER-->
@@ -98,7 +103,7 @@
         position: absolute;
         bottom: 0px;
         left: 0px;
-        padding-top: 20px;
+        padding-top: 15px;
     }
 DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
     .footer-content{
@@ -107,6 +112,52 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
         justify-content: center;
         flex-direction: column;
         text-align: center;
+    }
+
+
+       .body-section{
+        display: flex;
+        margin: 5px 10px;
+        max-width: 100%
+    }
+
+    .side{
+        width: 30%;
+        height: 250px;
+        margin: 15px 0;
+    }
+
+
+    .main-body1{
+        width: 58%;
+        height:250px;
+        text-align: center;
+        margin: 0 10px 0 10px;
+        max-width: 100%;
+        padding: 20px 150px 20px;
+    }
+
+     .side2{
+        width: 30%;
+        height: relative;
+        font-size: 10;
+        margin: 15px 0;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .side2 p{
+        font-size: 13px;
+        font-weight: bold;
+        color: #eacef4;
+        width: 70%;
+
+    }
+
+    .side2 img{
+        width: 45%;
+        margin: 10px;
+
     }
 
     .socials{
@@ -124,28 +175,53 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
     .socials a{
         text-decoration: none;
         color: #fff;
+        position:relative;
+        right:1rem;
     }
 
-    .socials a i{
-        font-size: 1.1rem;
+    .socials i{
+        font-size: 1.8rem;
     }
+
+    .socials i:hover{
+        color: #A668B2;
+    }
+
     DET ÄR FRAM TILLS HIT SOM DET INTE FUNKAR OCH SOM JAG SKA KOLLA MER PÅ UNDER MÅNDAGEN
+
+
+    @media (max-width: 770px){
+        .body-section{
+            display: block;
+        }
+       .main-body{
+            width: 100%;
+            height: relative;
+            margin: 10px 0 10px 0;
+       }
+       .sidebar{
+            width: 100%;
+            height: 70px;
+            text-align: center;
+       }
+    }
+
+
 
     html,
     body{
         height: 100%;
     }
     .page-wrapper{
-        min-height: 20%;
+        max-height: 20%;
     }
     .page-wrapper a:hover{
         color: #006669;
     }
+
     </style>
 
-<!--FOOTER-->
-
-    <script type="text/javascript" src="index.js"></script>
+    <!--FOOTER-->
 
 </head>
 
@@ -156,7 +232,8 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 
 
     <!-- Tillbaka till huvudsidan -->
-    <a class="navbar-brand" href="/home_page/" style="color: #630875; font-weight:bold; padding: 15px;">LUS Tekniksprång</a>
+    <a class="navbar-brand" href="/home_page/" style="color: #630875; font-weight:bold; padding: 15px;">LUS
+        Tekniksprång</a>
 
     <!-- Ger tre strecken till hela navbaren vid smalt format -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -171,7 +248,8 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 
             <!-- Om oss, kort berättelse om oss själva och dylikt -->
             <li class="nav-item active">
-                <a class="nav-link" href="/home_page/om_oss" style="color: purple">Om oss<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/home_page/om_oss" style="color: purple">Om oss<span
+                        class="sr-only">(current)</span></a>
             </li>
 
 
@@ -209,7 +287,6 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
             </li>
 
 
-
         </ul>
     </div>
 
@@ -217,18 +294,17 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 </nav>
 
 <!-- Här skrivs vad som ska stå i den lila ovanlisten -->
-                <div id="container">
+<div id="container">
 
-                    <div id="footer"><!-- HÄR HÄR HÄR-->
-                </div>
-                </div>
+    <div id="footer"><!-- HÄR HÄR HÄR-->
+    </div>
+</div>
 
 
 <div class="container">
     {% block content %}
     {% endblock %}
 </div>
-
 
 
 <!-- PAGE WRAPPER  -->
@@ -239,22 +315,50 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 <!--Footer-->
 <div class="footer">
     <div class="footer-content">
-        <ul class="socials">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-gmail"></i></a></li>
-        </ul>
-        <div class="footer-section about ">This is us</div>
-        <div class="footer-section link">Here we will have some links</div>
-        <div class="footer-section contact-form">And here parhaps our contact information</div>
-    </div>
 
+        <div class="body-section">
+
+
+            <div class="side">
+                <br><br><br><br><br>
+                    <hr>
+                <div class="float-left">
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                    <p>Maila oss!</p>
+                </ul>
+</div>
+            </div>
+
+            <div class="main-body1" style="max-width; 90%;">
+                <div class="footer-section about "></div>
+                <div class="footer-section link"></div>
+                <div class="footer-section contact-form"></div>
+
+            </div>
+
+            <div class="side2">
+                <div class="d-flex justify-content-center">
+                <p>För dig som vill veta mer om Tekniksprånget har vi länkat alla deras socila medier här under!</p>
+                </div>
+                <img src="https://th.bing.com/th/id/OIP.gZMQsHAQhuqkMioIW-rVmQHaBq?w=338&h=78&c=7&r=0&o=5&pid=1.7"
+                     alt="">
+                <hr>
+                <ul class="socials">
+                    <li><a href="https://sv-se.facebook.com/teknikspranget/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/teknikspranget/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/@tekniksprangetIVA"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@teknikspranget/"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/teknikspranget"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.teknikspranget.se/"><i class="fa fa-globe"></i></a></li>
+                </ul>
+            </div>
+        </div>
+     </div>
     <div class="footer-bottom">
         &copy; lustekningsprang.com | Designed by Tekniksprångarna2023
     </div>
 </div>
-
-
 
 
 <!-- JAVASCRIPTET MÅSTE FINNS HÄR ELLER I VARJE HTML FIL -->
@@ -272,14 +376,15 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-</body>
-</html>
-
-
-
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
