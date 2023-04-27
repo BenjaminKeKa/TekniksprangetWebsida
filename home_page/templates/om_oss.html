@@ -3,6 +3,7 @@
 
 {% block content %}
 {% spaceless %}
+{% load static %}
 
 <style>
     .card-body h5{
@@ -40,7 +41,7 @@
     <div class="col">
         <div class="card-deck">
             <div class="card" style="border-color: #eacef4;">
-                <img src="{{ snabbfakta.image }}"
+                <img src="{% static '/home_page/information-images/Bild_på_BENJAMIN.jpg' %}"
                      class="card-img-top" alt="Bild på {{ snabbfakta.name }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ snabbfakta.name }}</h5>
@@ -76,15 +77,11 @@
     <br>
     <br>
 
-
-
-
-
    {% endfor %}
     </div>
 <br>
 <br>
-    </center>
+</center>
 {% endspaceless %}
 {% endblock %}
 
