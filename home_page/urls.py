@@ -12,6 +12,11 @@ urlpatterns = [
     path("stralningsfysik", views.stralningsfysik),
     path("utrustning", views.utrustning),
     path("intervju", views.intervju),
-    path("kontakt", views.kontakt)
+    path("kontakt", views.kontakt),
+    path("website", views.website),
+    path("fysiker", views.fysiker),
+    path("ingenjörer", views.ingenjörer),
+    path("munk", views.munk),
+    path("per", views.per)
 
 ]

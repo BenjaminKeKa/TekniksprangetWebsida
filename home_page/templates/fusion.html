@@ -1,1 +1,35 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<center>    <h1 class="display-2">3D-printing med CAD</h1>
+
+    <br>
+    <div class="d-flex justify-content-center" style="max-width: 80%;">
+    <img src="{% static 'home_page/carousel-images/ModelleringiCAD.png' %}" style="max-width: 50%;"
+         alt="Screenshot på TB i Fusion360">
+    <img src="{% static 'home_page/carousel-images/Dragskåpet100%färdigt.jpg' %}" style="max-width: 50%; height: auto;"
+         alt="Bild på det färdiga dragskåpet">
+
+
+        </div>
+    <div class="d-flex justify-content-center" style="max-width: 100%">
+    <p style="text-align: left; max-width: 80%; font-style: italic; padding: 0 260px">Modellering av en TB i Fusion360</p>
+    <p style="text-align: right; max-width: 80%; font-style: italic">3D-printad TB från ritningen i Fusion360</p>
+        </div>
+    <br><br><br>
+    <h2>Design i Fusion360</h2>
+    <p>Vad vi blev ombedda att göra</p>
+    <br><br>
+    <h2>Scanner-projektet</h2>
+    <p>Hur vi tänkte och genomförde uppgiften</p>
+    <br><br>
+
+    <h2>Mini-maskiner</h2>
+    <p>Hur det gick</p>
+    <br><br>
+
+</center>
+
+
+{% endblock %}

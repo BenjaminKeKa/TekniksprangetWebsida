@@ -1,1 +1,27 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<center>    <h1 class="display-2">Dragskåpet</h1>
+
+    <br>
+    <img src="{% static 'home_page/carousel-images/Dragskåpet100%färdigt.jpg' %}" style="max-width: 70%; height: auto;"
+         alt="Bild på det färdiga dragskåpet">
+    <p style="text-align: right; max-width: 70%; font-style: italic">Dragskåpet, färdigt och monterat</p>
+    <br><br><br>
+    <h2>Vår uppgift</h2>
+    <p>Vad vi blev ombedda att göra</p>
+    <br><br>
+
+    <h2>Vår tanke och genomförandet</h2>
+    <p>Hur vi tänkte och genomförde uppgiften</p>
+    <br><br>
+
+    <h2>Resultatet</h2>
+    <p>Hur det gick</p>
+    <br><br>
+
+</center>
+
+
+{% endblock %}

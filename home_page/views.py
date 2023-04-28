@@ -45,3 +45,18 @@ def intervju(request):
 
 def kontakt(request):
      return render(request, "kontakt.html")
+
+def website(request):
+     return render(request, "website.html")
+
+def fysiker(request):
+     return render(request, "Intervjuer/fysiker.html")
+
+def ingenjörer(request):
+     return render(request, "Intervjuer/ingenjörer.html")
+
+def munk(request):
+     return render(request, "Intervjuer/munk.html")
+
+def per(request):
+     return render(request, "Intervjuer/per.html")

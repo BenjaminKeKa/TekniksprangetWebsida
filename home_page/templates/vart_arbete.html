@@ -1,1 +1,57 @@
 {% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+
+<style>
+    p{
+        max-width:60%;
+    }
+    .btn-group a{
+        font-weight: bold;
+        color: purple;
+    }
+    .btn-group a:hover{
+        color: #eacef4;
+    }
+
+
+
+</style>
+
+<center>
+
+    <h1 class="display-2">Vårt arbete</h1>
+    <br>
+    <div class="d-flex justify-content-center" style="max-width: 100%">
+        <img src="{% static 'home_page/carousel-images/Dragskåpet100%färdigt.jpg' %}" style="max-width:25%" alt="">
+        <img src="{% static 'home_page/project-images/webkameran/Webkamera+dator - kamera ljus.jpg' %}"
+             style="max-width:25%" alt="">
+        <img src="{% static 'home_page/carousel-images/MiniTBFusion360q.png' %}" style="max-width: 25%" alt="">
+        <img src="{% static 'home_page/carousel-images/slide2.png' %}" style="max-width:25%" alt="">
+
+    </div>
+    <br><br><br>
+
+    <p>Under vår tid som praktikanter hos Region Skåne fick vi vara med om en massa av olika intressanta saker som sker
+        inom ingenjörsyrket. Ingenjörernas huvudsakliga arbete på Strålningsfysiken är felsökning och underhåll av
+        behandlingsmaskinerna som finns på plats. Det vill säga att deras uppgift är att se till att patienter kan
+        behandlas utifrån den maskintekniska ”delen av processen”. Underhåll, korta som långa, är även det en viktig del
+        av att förebygga oplanerade driftstopp som äventyrar patienternas behandlingsplan. Därför är det viktgit att
+        ingenjörerna här har god och djup förståelse för maskinerna som finns på sjukhuset.</p>
+    <p>Utöver att få följa med ingenjörerna på servicar och underhåll av maskinerna har vi parallellt jobbat med en del
+        egna projekt. En del av projekten är på uppdrag av ingenjörerna, saker som behövt göras men som de inte haft tid
+        med. Andra projekt har vi startat på eget initiativ, något som vi märkt behövts här eller som vi ville lära oss
+        mer om. Det är om alla dess projekt som ni kan läsa om här. </p>
+    <br><br>
+
+    <div class="btn-group">
+        <a href="/home_page/dragskapet" class="btn btn-outline">Dragskåpet</a>
+        <a href="/home_page/webkamera" class="btn btn-outline">Webkamerna och Linuxdatorn</a>
+        <a href="/home_page/fusion" class="btn btn-outline">3D-printing i CAD</a>
+        <a href="/home_page/website" class="btn btn-outline">Vår egen hemsida</a>
+    </div>
+    <br><br><br>
+
+</center>
+{% endblock %}

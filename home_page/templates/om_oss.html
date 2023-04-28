@@ -41,8 +41,10 @@
     <div class="col">
         <div class="card-deck">
             <div class="card" style="border-color: #eacef4;">
-                <img src="{% static '/home_page/information-images/Bild_på_BENJAMIN.jpg' %}"
+                <div class="d-flex justify-content-center">
+                <img src="{% static '/home_page/information-images/Bild_på_BENJAMIN.jpg' %}" style="max-width: 80%; padding: 30px; border-color: purple"
                      class="card-img-top" alt="Bild på {{ snabbfakta.name }}">
+                    </div>
                 <div class="card-body">
                     <h5 class="card-title">{{ snabbfakta.name }}</h5>
                     <p class="card-text">{{ snabbfakta.text }}</p>

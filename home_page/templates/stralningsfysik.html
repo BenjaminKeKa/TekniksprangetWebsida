@@ -68,9 +68,42 @@
     color: purple;
     font-weight: bold;
 }
-
-
 </style>
+
+ <style>
+        *{scroll-behavior: smooth;
+            }
+        .scrollTop{
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 10px 15px;
+            background-color: #000;
+            color: #fed2f2;
+            border-radius: 5px;
+            border-radius: 1px solid #fff;
+            cursor: pointer;
+            transition: all 0.5s ease 0s;
+            }
+        .scrollTop:hover{
+            background-color: #fed2f2;
+            color: #000;
+            }
+        .boldText{
+            font-family: Calibri;
+            font-weight:bold;
+            width: 36rem;
+            justify-content: center;
+        }
+        .centreradDiv{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        }
+
+
+    </style>
+
 
 
 <div>
@@ -105,18 +138,50 @@
             <div class="main-body">
                 <div style="max-width:90%">
                     <h2>Historia</h2>
-                    <p>här skriver vi lite om Stålfysikens historia på region Skåne</p>
+                    <p>Skånes universitetssjukhus (SUS) grundades 2010 genom en sammanslagning av sjukhusen i Lund och
+                        Malmö och är idag fortfarande huvudsakligen stationerad på dess orter. Med ca 12000 anställda
+                        och en årlig budget på ungefär 14 miljarder, räknas SUS som det tredje största sjukhuset i
+                        Sverige. Här finns fler än 100 olika yrkesgrupper som tillsammans arbetar för att hjälpa de
+                        drygt 1100 patienter som dagligen vårdas här. SUS bedriver en högspecialiserad vård och
+                        utbildning samt forskning inom en mängd områden. Sjukhuset har ett trettiotal olika
+                        verksamhetsområden, bland annat "Onkologi och strålningfysik".</p>
                     <br>
                     <br>
-                    <h2>Verksamheten</h2>
-                    <p>Här skriver vi lite om vad det nu handlar om</p>
+                    <h2>Onkologi och stålningsfysik</h2>
+                    <p>Idag jobbar ca 900 personer inom onkologi och strålningsfysik på SUS. Här avnänds både joniserande och
+                        icke-joniserande stårlning, vilket inkluderar både diagnostik och terapi med radioaktiva ämnen.
+                        Strålfysik är även huvudansvariga för strålsäkerheten i hela Region Skåne.</p>
+                    <br>
+                    <p><span style="font-weight: bold">Onkologi</span> är en allmän term för diagnostik och behandling
+                        av olika typer av tumörsjukdomar, vilket är precis vad detta verksamhetsområd har hand om. Här
+                        jobbar främst forskare och läkare med diagnos och icke-kirurgisk behandling av cancer.</p>
+                    <br>
+                    <p><span style="font-weight: bold">Strålningsfysik</span> är främst ansvariga för stårlsäkerheten
+                        och den medecintekniska säkerheten på avdelning. Här jobbar läkare, fysiker och ingenjörer för
+                        att behandlingarna  ska bli så säkra så möjligt och att alla pasienter ska få sin behandling i
+                        tid. Det är här som vi tekniksprångare befinner oss.</p>
+                     <br>
+                    <p>Avdelningen är delaktiga i flera nationella och internationella forskningsprojekt för att driva
+                        utvecklingen framåt. Bland annat så var SUS strålfysikavdelning i Malmö först med att använda
+                        sig av <span style="font-style:italic">gating</span>. En metod kopplad till patientens andning
+                        under stålbehandlning, främst vid bröstcancer, med syfte att minska stråldosen till hjärtat.
+                        Stålfysikavdelningen på SUS bedriver också i en forskningsstudie tillsammans med University of
+                        Oxford om FLASH - en ny, mer effektiv strålbehandlingsmetod. Patienten är då tänkt att få en väldigt
+                        kort strålbehandling på 70-90 Gy/sekund, till skillnad från en idag "vanlig" behandling som
+                        pågår i flera minuter och med en stråldos på ca. 8 Gy/sekund.</p>
                     <br><br>
                     <h2>Univeristetssjukhus</h2>
-                    <p>Här skriver vi lite om hur det fungerar att tillhöra ett universitetssjukhus. Kanske något om
-                        Flash??</p>
+                    <p>SUS är som namnet avtyder ett universitetssjukhus. Detta innebär en skyldighet att bedriva
+                        forskning samt att vara en föregångare med nya metoder och tenik. SUS har därför ett tätt
+                        sammarbete med Lunds universitet och bedriver mycket forskning kopplad till patientnära klinisk
+                        verksamhet. Nationellt högspecialiserad vård (NHV) är vård av ovanliga sjukdomstillstånd som
+                        kräver spetskompetens. NHV-uppdragen är centerarade till max fem sjukhus i Sverige och
+                        finansieras nationellt. SUS har idag ett tjugotal olika NHV-uppdrag.</p>
+                    <p>Att sjuhuset också bedriver strålbehandling på ett antal olika maskiner, från olika producenter,
+                        är också ett av sjukhusets del i att vara ett universitetssjukhus.</p>
                     <br><br>
                     <h2>Yrkesgrupper</h2>
-                    <p>Här brättar vi lite kortfattat om vilka yrkesgrupper som finns här och va de gör. Kankse hänvisar
+                    <p>Här berättar vi lite kortfattat om vilka yrkesgrupper som finns här och va de gör. Kankse hänvisar
                         till intervjuerna?? dfhkjdfgdf gdfbd fhgejrysegs hfserfyuqrtf sgd hgsfeawrewtfegadasdfg hsdf uae
                         rkawuvd</p>
                     <br><br><br>
@@ -161,8 +226,8 @@
                     <p>Region Skåne inrättades år 1999 genom en sammanslagning av landstingen i dåvarande Skåne
                         respektive Halland Län, samt Malmö kommun. Det är en politisk styrd organisation som främst
                         avsvarar för hälso- och sjukvåden, men även för kollektivtrafik och kultur. Region Skåne täcker
-                        idag totalt 33 kommuner i Skåne och Halland och bedriver sjukvård på åtta olika sjukhus. Däribland på
-                        Skånes Universitetssjukhus (SUS), regionens enda universitetssjukhus.</p>
+                        idag totalt 33 kommuner i Skåne och Halland och bedriver sjukvård på åtta olika sjukhus.
+                        Däribland på SUS, regionens enda universitetssjukhus.</p>
 
                 </div>
             </div>
@@ -193,5 +258,18 @@
     </center>
 </div>
 <br><br>
+
+
+
+<div onclick="scrollToTop()" class="scrollTop">TILL TOPPEN</div>
+
+
+
+<script>
+    function scrollToTop(){
+        window.scrollTo(0, 0);
+}
+</script>
+
 {% endblock %}
 
