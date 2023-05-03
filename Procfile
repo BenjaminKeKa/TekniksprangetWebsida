@@ -1,1 +1,1 @@
-web: gunicorn website.wsgi --log-file -
+web: gunicorn HerokuGitHubTest.wsgi --log-file -
