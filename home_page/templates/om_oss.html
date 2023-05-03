@@ -10,6 +10,16 @@
         color: purple;
         font-width: bold;
     }
+
+    .card-text{
+        max-width: 80%;
+        padding: 5px;
+    }
+
+    img{
+        max-width: 85%;
+        padding: 0 90px;
+    }
 </style>
 
 
@@ -33,27 +43,38 @@
 </div>
 {% endfor %}
 
+
+    <div class="d-flex justify-content-center" style="max-width: 60%">
+                <img src="{% static '/home_page/information-images/Bild_på_BENJAMIN.jpg' %}"
+                  alt="Bild på {{ snabbfakta.name }}">
+        <img src="{% static '/home_page/information-images/Bild_på_BENJAMIN.jpg' %}"
+                    alt="Bild på {{ snabbfakta.name }}">
+                    </div>
+
 <br>
 <div class="row row-cols-1 row-cols-md-2 g-4">
+
+
+
 {% for snabbfakta in snabbfaktan %}
+
 
 
     <div class="col">
         <div class="card-deck">
             <div class="card" style="border-color: #eacef4;">
-                <div class="d-flex justify-content-center">
-                <img src="{% static '/home_page/information-images/Bild_på_BENJAMIN.jpg' %}" style="max-width: 80%; padding: 30px; border-color: purple"
-                     class="card-img-top" alt="Bild på {{ snabbfakta.name }}">
-                    </div>
+
                 <div class="card-body">
                     <h5 class="card-title">{{ snabbfakta.name }}</h5>
                     <p class="card-text">{{ snabbfakta.text }}</p>
-                    <p class="card-text"><small class="text-muted">{{ snabbfakta.last_updated }}</small></p>
+                     <p class="card-text">{{ snabbfakta.head_quote }}</p>
+                     <p class="card-text">{{ snabbfakta.last_updated }}</p>
+                    <p class="card-text"><small class="text-muted">Last updated May 2023</small></p>
                 </div>
 
 
                 <div class="card text-danger">
-                    <div class="card-header">{{ snabbfakta.head_quote }}</div>
+                    <div class="card-header">Quote</div>
 
                     <br>
 

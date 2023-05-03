@@ -17,8 +17,8 @@ class Snabbfakta(models.Model):
     name = models.CharField(max_length=50)
     text = models.CharField(max_length=5000)
     image = models.CharField(max_length=2083)
-    head_quote = models.CharField(max_length=200)
-    last_updated = models.CharField(max_length=100)
+    head_quote = models.CharField(max_length=5000)
+    last_updated = models.CharField(max_length=5000)
     quote = models.CharField(max_length=1000)
     quote_sayer = models.CharField(max_length=200)
 

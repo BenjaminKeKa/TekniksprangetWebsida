@@ -2,6 +2,15 @@
 {% load static %}
 
 {% block content %}
+
+<style>
+    p{
+        max-width: 60%;
+    }
+
+</style>
+
+
 <center>    <h1 class="display-2">Webkameran</h1>
 
     <br>
@@ -10,11 +19,26 @@
     <p style="text-align: right; max-width: 70%; font-style: italic">Webkameran (på ett 3D-printat stativ) och Linuxdatorn</p>
     <br><br><br>
     <h2>Vår uppgift</h2>
-    <p>Vad vi blev ombedda att göra</p>
+    <p>Vår uppgift var att koppla in en webkamera som ska kunna streama filem på en intern websida. Även att skapa denna
+        websida ingick i det här projektet. Syftet med kameran är att övervaka produktionen av tandspecar i dragskåpet,
+        som befinner sig på ett annat våningsplan.</p>
     <br><br>
 
     <h2>Vår tanke och genomförandet</h2>
-    <p>Hur vi tänkte och genomförde uppgiften</p>
+    <p><span style="font-style: italic">Linuxdatorn: </span></p>
+    <p><span style="font-style: italic">Websidan: </span>Ingen av oss hade tidigare varken hållt på med någon form av
+        programmering eller byggt hemsidor. Så vi fick börja helt från början med att följa tutorials i YouTube, först
+        med "vanlig" programmering i Python och senare hur man bygger en hemsida med Django. Från vår hemsida ville vi
+        att man skulle kunna både streama videon och starta och stänga av kameran. Det blev en rätt simpel hemsida med
+        en ruta för videon, en på-knapp, en av-knapp och en status-knapp. När väl layouten var skapad var det dags att
+        skriva koden till knapparna så att de gör det de ska. Det tog ett tag, men så småningnom fungerade allt som vi
+        vill. PÅ-knappen startade kameran och gjorde att videon börjad streamas i rutan. AV-knappen stängde av kameran
+        och streamingen samt raderade alla filer, så att streamen skulle vara live även nästa gång kameran startades.
+        Status-knappen vissade På om kameran var på och Av om kameran var av.</p>
+    <p><span style="font-style: italic">Nätverket: </span></p>
+    <p><span style="font-style: italic">Stativet: </span>För att kameran skulle kunna se in i 3D-printern var den
+        tvungen att kommma upp en bit. Detta löste vi genom att rita upp ett stativ i Fusion360 som vi sedan printade ut
+        i vår stora, "vanliga" 3D-printer.</p>
     <br><br>
 
     <h2>Resultatet</h2>
