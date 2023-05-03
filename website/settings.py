@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'HerokuGitHubTest.wsgi.application'
+WSGI_APPLICATION = 'website.wsgi.application'
 
 
 # Database
