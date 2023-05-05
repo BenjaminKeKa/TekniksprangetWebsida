@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
@@ -46,6 +45,7 @@
 
         }
 
+
     </style>
 
     <!-- Olika modeller av text som kan appliceras i alla html-filer. Fler modeller kan adderas under "style" nedan -->
@@ -75,6 +75,7 @@
         #ca78e8
         #a91fdb;
         #eacef4
+
 
     </style>
 
@@ -115,24 +116,21 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
     }
 
 
-       .body-section{
+   .body-section{
         display: flex;
         margin: 5px 10px;
         max-width: 100%
-    }
+   }
 
-    .side{
+   .side{
         width: 30%;
-        height: 250px;
+        height: relative;
         margin: 15px 0;
-        padding: 15px 0;
-    }
-    .side p{
+        padding: 8px;
+   }
+   .side p{
         padding: 2px 0;
-    }
-    .side .socials li{
-        padding: 1px 0;
-    }
+   }
 
 
     .main-body1{
@@ -140,14 +138,12 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
         height:250px;
         text-align: center;
         margin: 0 10px 0 10px;
-        max-width: 100%;
         padding: 20px 150px 20px;
     }
 
      .side2{
         width: 30%;
         height: relative;
-        font-size: 10;
         margin: 15px 0;
         padding: 8px;
         text-align: center;
@@ -194,6 +190,8 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
         color: #A668B2;
     }
 
+    @media screen and (max-width: 768px) {
+
     DET ÄR FRAM TILLS HIT SOM DET INTE FUNKAR OCH SOM JAG SKA KOLLA MER PÅ UNDER MÅNDAGEN
 
 
@@ -201,14 +199,19 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
         .body-section{
             display: block;
         }
-       .main-body{
-            width: 100%;
-            height: relative;
+       .main-body1{
+            width: 0;
+            height: 0;
             margin: 10px 0 10px 0;
        }
        .side{
             width: 100%;
-            height: 70px;
+            height: 100px;
+            text-align: center;
+       }
+       .side2{
+            width: 100%;
+            height: 200px;
             text-align: center;
        }
     }
@@ -226,6 +229,7 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
         color: #006669;
     }
 
+
     </style>
 
     <!--FOOTER-->
@@ -239,7 +243,7 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 
 
     <!-- Tillbaka till huvudsidan -->
-    <a class="navbar-brand" href="/home_page/" style="color: #630875; font-weight:bold; padding: 15px;">LUS
+    <a class="navbar-brand" href="/" style="color: #630875; font-weight:bold; padding: 15px;">LUS
         Tekniksprång</a>
 
     <!-- Ger tre strecken till hela navbaren vid smalt format -->
@@ -255,7 +259,7 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 
             <!-- Om oss, kort berättelse om oss själva och dylikt -->
             <li class="nav-item active">
-                <a class="nav-link" href="/home_page/om_oss" style="color: purple">Om oss<span
+                <a class="nav-link" href="/om_oss" style="color: purple">Om oss<span
                         class="sr-only">(current)</span></a>
             </li>
 
@@ -266,11 +270,11 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
                    aria-haspopup="true" aria-expanded="false" style="color: purple">Vårt arbete</a>
 
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="/home_page/vart_arbete">Vårt arbete</a>
-                    <a class="dropdown-item" href="/home_page/dragskapet">Dragskåpet</a>
-                    <a class="dropdown-item" href="/home_page/webkamera">Webkameran</a>
-                    <a class="dropdown-item" href="/home_page/fusion">3D printing med CAD</a>
-                    <a class="dropdown-item" href="/home_page/website">Vår egen hemsida</a>
+                    <a class="dropdown-item" href="/vart_arbete">Vårt arbete</a>
+                    <a class="dropdown-item" href="/dragskapet">Dragskåpet</a>
+                    <a class="dropdown-item" href="/webkamera">Webkameran</a>
+                    <a class="dropdown-item" href="/fusion">3D printing med CAD</a>
+                    <a class="dropdown-item" href="/website">Vår egen hemsida</a>
                 </div>
             </li>
 
@@ -282,16 +286,16 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
                    aria-haspopup="true" aria-expanded="false" style="color: purple">Strålningsfysik Region Skåne</a>
 
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="/home_page/stralningsfysik">Strålningsfysik Region Skåne</a>
-                    <a class="dropdown-item" href="/home_page/utrustning">Maskinerna</a>
-                    <a class="dropdown-item" href="/home_page/intervju">Intervjuer med anställda</a>
+                    <a class="dropdown-item" href="/stralningsfysik">Strålningsfysik Region Skåne</a>
+                    <a class="dropdown-item" href="/utrustning">Maskinerna</a>
+                    <a class="dropdown-item" href="/intervju">Intervjuer med anställda</a>
                 </div>
             </li>
 
 
             <!--  Kontakt vid behov av svar på frågor -->
             <li class="nav-item active">
-                <a class="nav-link" href="/home_page/kontakt" style="color: purple">Kontakt</a>
+                <a class="nav-link" href="/kontakt" style="color: purple">Kontakt</a>
             </li>
 
 
@@ -329,16 +333,16 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 
             <div class="side">
                 <br><br><br><br><br>
-                    <hr>
+                <hr>
                 <div class="float-left">
-                <ul class="socials">
-                    <li><a href="/home_page/kontakt"><i class="fa fa-envelope"></i></a></li>
-                    <p>Maila oss!</p>
-                </ul>
-</div>
+                    <ul class="socials">
+                        <li><a href="/kontakt"><i class="fa fa-envelope"></i></a></li>
+                        <p>Maila oss!</p>
+                    </ul>
+                </div>
             </div>
 
-            <div class="main-body1" style="max-width; 90%;">
+            <div class="main-body1" style="max-width; 50%;">
                 <div class="footer-section about "></div>
                 <div class="footer-section link"></div>
                 <div class="footer-section contact-form"></div>
@@ -347,22 +351,27 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 
             <div class="side2">
                 <div class="d-flex justify-content-center">
-                <p>För dig som vill veta mer om Tekniksprånget har vi länkat alla deras sociala medier här under!</p>
+                    <p>För dig som vill veta mer om Tekniksprånget har vi länkat alla deras sociala medier här
+                        under!</p>
                 </div>
                 <img src="https://th.bing.com/th/id/OIP.gZMQsHAQhuqkMioIW-rVmQHaBq?w=338&h=78&c=7&r=0&o=5&pid=1.7"
                      alt="">
                 <hr>
                 <ul class="socials">
-                    <li><a href="https://sv-se.facebook.com/teknikspranget/"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/teknikspranget/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/@tekniksprangetIVA"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://sv-se.facebook.com/teknikspranget/"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/teknikspranget/"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/@tekniksprangetIVA"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
                     <li><a href="https://www.tiktok.com/@teknikspranget/"><i class="fa-brands fa-tiktok"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/teknikspranget"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/teknikspranget"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
                     <li><a href="https://www.teknikspranget.se/"><i class="fa fa-globe"></i></a></li>
                 </ul>
             </div>
         </div>
-     </div>
+    </div>
     <div class="footer-bottom">
         &copy; lustekningsprang.com | Designed by Tekniksprångarna2023
     </div>
