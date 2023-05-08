@@ -6,102 +6,159 @@
 {% load static %}
 
 <style>
-    .card-body h5{
-        color: purple;
-        font-width: bold;
+    .display-1 {
+        text-align:center;
+        color:#630875;
+    }
+    .fakta-ruta-overlord {
+        width:60rem;
+        height:85rem;
+        border-width:5px;
+        border-style:double;
+        border-color:#630875;
+    }
+    .fakta-ruta-1 {
+        position:absolute;
+        width:28rem;
+        height:100rem;
+        padding:2%;
+    }
+    .bild-1 {
+        width:18rem;
+        height:24rem;
+    }
+    .fakta-ruta-2 {
+        position:absolute;
+        left:52%;
+        width:28rem;
+        height:100rem;
+        padding:2%;
+    }
+    .bild-2 {
+        width:18rem;
+        height:24rem;
+    }
+    .hr-lite {
+        height:3px;
+        color:purple;
+        background-color:purple
     }
 
-    .card-text{
-        max-width: 80%;
-        padding: 5px;
-    }
-
-    img{
-        max-width: 85%;
-        padding: 0 90px;
+    @media screen and (max-width: 768px) {
+            .display-1 {
+                text-align:center;
+                color:#630875;
+            }
+            .fakta-ruta-overlord {
+                width:60rem;
+                height:160rem;
+                border-width:5px;
+                border-style:double;
+                border-color:#630875;
+            }
+            .fakta-ruta-1 {
+                position:relative;
+                width:28rem;
+                height:85rem;
+                left:6%;
+                padding:2%;
+            }
+            .bild-1 {
+                width:18rem;
+                height:24rem;
+            }
+            .fakta-ruta-2 {
+                position:relative;
+                width:28rem;
+                height:100rem;
+                left:6%;
+                padding:0%;
+            }
+            .bild-2 {
+                width:18rem;
+                height:24rem;
+            }
+            .hr-lite {
+                height:3px;
+                color:purple;
+                background-color:purple
+            }
     }
 </style>
 
+<br>
 
-<center>
-
-<h1 class="display-2">Om oss</h1>
-
+<h1 class="display-1">Om oss</h1>
 
 <br>
 
+<div class="d-flex justify-content-center">
+    <div class="fakta-ruta-overlord">
 
-{% for summary_om_oss in s_om_oss %}
-<div class="col">
-    <div class="jumbotron" style="background-color: #fef8fe">
-    <!--    <h1 class="display-4; purpleText">Sammanfattning</h1> -->
-        <p class="lead">Hur vi kom hit</p>
-        <hr class="my-4" style="color: purple;">
-        <p>{{ summary_om_oss.summary }}</p>
-    </div>
-
-</div>
-{% endfor %}
-
-
-    <div class="d-flex justify-content-center" style="max-width: 60%">
-                <img src="{% static '/home_page/information-images/Bild_på_BENJAMIN.jpg' %}"
-                  alt="Bild på {{ snabbfakta.name }}">
-        <img src="{% static '/home_page/information-images/Bild_på_BENJAMIN.jpg' %}"
-                    alt="Bild på {{ snabbfakta.name }}">
-                    </div>
-
-<br>
-<div class="row row-cols-1 row-cols-md-2 g-4">
-
-
-
-{% for snabbfakta in snabbfaktan %}
-
-
-
-    <div class="col">
-        <div class="card-deck">
-            <div class="card" style="border-color: #eacef4;">
-
-                <div class="card-body">
-                    <h5 class="card-title">{{ snabbfakta.name }}</h5>
-                    <p class="card-text">{{ snabbfakta.text }}</p>
-                     <p class="card-text">{{ snabbfakta.head_quote }}</p>
-                     <p class="card-text">{{ snabbfakta.last_updated }}</p>
-                    <p class="card-text"><small class="text-muted">Last updated May 2023</small></p>
-                </div>
-
-
-                <div class="card text-danger">
-                    <div class="card-header">Quote</div>
-
-                    <br>
-
-
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p>{{ snabbfakta.quote }}</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">
-                                {{ snabbfakta.quote_sayer }}</cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-
-                </div>
-                <br>
-                <br>
+        <div class="fakta-ruta-1">
+            <div class="d-flex justify-content-center">
+                <img class="bild-1" src="{% static 'home_page/information-images/Bild_på_BENJAMIN.jpg' %}" alt="Bild på tekniksprångare">
             </div>
+            <br>
+            <hr class="hr-lite">
+            <p> Jag är ju då den som oftast benämns som Benjamin. Jag är en av de två Tekniksprångarna som genomför sin
+                praktik hos Strålningsfysiken på Lunds universitetssjukhus under våren 2023. För mig har det länge
+                självklart att jag ville läsa vidare till ingenjör efter gymnasiet då jag fann stor glädje av att arbeta
+                med problemlösning i ämnen som fysik och matematik. Dock ville jag inte plugga vidare direkt efter
+                studenten så när en kompis tipsade om Tekniksprånget så var det självklart att jag skulle göra det!
+            </p>
 
+            <p> Först sökte jag till höstens praktikplatser men kom inte in på några av dem, det är tuffare
+                konkurrens på hösten efter platser. Men att ge upp gjorde jag ej och sökte till våren i stället där jag
+                kom in på en av Region Skånes praktikplatser här på Strålningsfysiken. De månaderna jag spenderat här
+                har varit otroligt roligt och ögonöppnande för både yrkesrollen som ingenjör och hur den svenska
+                cancervården bedrivs. Att få testa på och uppleva så många olika saker inom rollen som ingenjör innan
+                man ens börjat plugga känns betryckande då man får en speciell kompetensen så tidigt som kan hjälpa en
+                inom både framtida högskolelivet och yrkeslivet.
+            </p>
 
+            <p> För dig som är intresserad av Tekniksprånget och livet som ingenjör rekommenderar jag starkt att du tar
+                chansen och praktiserar som ingenjör. Det är en unik upplevelse som väldigt få yrken annars kan göra.
+                Framöver för mig planerar jag att plugga teknisk fysik på Chalmers i Göteborg till hösten och jag hoppas
+                att du väljer att ta chansen och bli Tekniksprångare!
+            </p>
+            <hr class="hr-lite">
         </div>
-    </div>
 
-    <br>
-    <br>
+        <div class="fakta-ruta-2">
+            <div class="d-flex justify-content-center">
+                <img class="bild-2" src="{% static 'home_page/information-images/Bild_på_BENJAMIN.jpg' %}" alt="Bild på tekniksprångare">
+            </div>
+            <br>
+            <hr class="hr-lite">
+            <p> Hej! Petronella heter jag och är en av två Tekniksprångare som gör sin praktik på Strålfysiken i Lunds
+                Universitetssjukhus under våren 2023. Jag har alltid vetat att jag vill läsa vidare efter studenten, men
+                har så länge jag kan minnas velat mellan läkare och ingenjör. Eftersom jag inte visste vad jag ville
+                läsa vidare som, såg jag det som en möjlighet att ta ett sabbatsår. Tekniksprånget var inget som jag
+                visste om eller tänkt på från början, utan något som jag upptäckte under sök-perioden för vårens praktiker.
+            </p>
 
-   {% endfor %}
+            <p> Jag sökte alltså då till vårens praktik och fick en av platserna här på Strålfysiken. Under mina månader
+                här har jag introducerats till både CAD och programmering, vilket har varit sjukt kul och något som jag
+                alltid velat lära mig. Det har också varit en unik möjlighet att få en inblick i hur ingenjörsjobbet kan
+                se ut. För mig har det också varit en stor bonus att praktiken var på ett sjukhus. Jag har samtidigt som
+                jag fått testa på ingenjörsyrket fått lära mig mer om den svenska cancervården och fått en känsla för
+                hur arbetet inom sjukvården kan se ut. Tekniksprånget har varit en fantastisk möjlighet som jag tror
+                kommer hjälpa mig mycket, både vid val att utbildning och senare i livet.
+            </p>
+
+            <p>För dig som är osäker på vad du vill plugga vidare till rekommenderar jag starkt att söka till
+                Tekniksprånget - du kommer inte att ångra dig! Jag själv ska till hösten ut och resa och sen får vi se,
+                men just nu lutar det åt medicin och teknik på LTH.
+            </p>
+            <hr class="hr-lite">
+        </div>
+
     </div>
+</div>
+
+
+
 <br>
 <br>
 </center>
