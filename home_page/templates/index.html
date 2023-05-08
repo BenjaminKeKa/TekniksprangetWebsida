@@ -4,7 +4,7 @@
 {% load static %}
 
 <body>
-    <div style="text-align:center; padding:60px; position:static;">
+    <div style="text-align:center; padding: 60px 0; position:static;">
 
         <h1 style="font-size:50px;">Tekniksprånget hos Region Skåne</h1>
         <h3 style="font-size:30px">Strålningsfysiken på Lunds Universitetssjukhus</h3>
@@ -58,7 +58,49 @@
             bottom:25%;
             left:40rem;
             width:40rem;
+
+        }
+        .carousel-caption{
             text-align:left;
+            position: absolute;
+        }
+
+
+        @media screen and (max-width: 768px){
+            #myCarousel{
+                max-width: 90%;
+                padding: 1%;
+            }
+            .carousel-background{
+                position: relative;
+                height: 50rem;
+                width: 80%;
+                display: flex;
+
+            }
+            .carousel-item {
+            height:50rem;
+            width:200%;
+            position: relative;
+            }
+            .carousel-image {
+                position:relative;
+                max-width:40%;
+                height:30rem;
+                left:5%;
+                top:5rem;
+            }
+           .carousel-text {
+                position:relative;
+                bottom:1%;
+                left:1rem;
+                width:4rem;
+            }
+            carousel-caption{
+                text-align: bottom;
+                width: 80%;
+                position: relative;
+            }
         }
 
     </style>
@@ -81,7 +123,7 @@
 
                 <div class="carousel-inner">
 
-                    <div class="carousel-item active" style="badckground-color:black;">
+                    <div class="carousel-item active">
                         <div class="carousel-image">
                             <div class="d-flex justify-content-center">
                                 <img src="{% static 'home_page/information-images/Strålfysiken_i_Lund.jpg' %}"
@@ -91,7 +133,7 @@
                         </div>
 
                         <div class="carousel-text">
-                            <div class="carousel-caption d-none d-md-block" style="text-align:left;">
+                            <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:50px;">Verksamheten på Strålfysiken</h1>
                                 <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
                                 av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
@@ -104,7 +146,7 @@
                     </div>
 
 
-                    <div class="carousel-item" style="badckground-color:red;">
+                    <div class="carousel-item">
                         <div class="carousel-image">
                             <div class="d-flex justify-content-center">
                                 <img src="{% static 'home_page/machine-images/TB04mörk.jpg' %}" style="carousel-image;
@@ -113,13 +155,13 @@
                         </div>
 
                         <div class="carousel-text">
-                            <div class="carousel-caption d-none d-md-block" style="text-align:left;">
+                            <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:50px;">Behandlings-maskinerna på Strålfysiken</h1>
                                 <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
                                 av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
                                 snyggt och konkret sätt. Både för att främja tekniksprånget men också att viss upp ens
                                 kommunitiva förmågor.</p>
-                                <a href="/utrustning" type="button" class="btn btn-outline-light">Nämen se här!
+                                <a href="/maskiner" type="button" class="btn btn-outline-light">Nämen se här!
                                 Sikken fin frimärksbok min bäste herre har!</a>
                             </div>
                         </div>
@@ -136,7 +178,7 @@
                         </div>
 
                         <div class="carousel-text">
-                            <div class="carousel-caption d-none d-md-block" style="text-align:left;">
+                            <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:50px;">Om oss</h1>
                                 <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
                                 av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
@@ -149,7 +191,7 @@
                     </div>
 
 
-                    <div class="carousel-item" style="badckground-color:yellow;">
+                    <div class="carousel-item">
                         <div class="carousel-image">
                             <div class="d-flex justify-content-center">
                                 <img src="{% static 'home_page/carousel-images/slide2.png' %}" style="carousel-image;
@@ -158,7 +200,7 @@
                         </div>
 
                         <div class="carousel-text">
-                            <div class="carousel-caption d-none d-md-block" style="text-align:left;">
+                            <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:50px;">Intervjuer med anställda</h1>
                                 <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
                                 av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
@@ -181,7 +223,7 @@
                         </div>
 
                         <div class="carousel-text">
-                            <div class="carousel-caption d-none d-md-block" style="text-align:left;">
+                            <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:50px;">3D-modellering med CAD</h1>
                                 <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten
                                 av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
@@ -204,7 +246,7 @@
     <div class="d-flex justify-content-center"><div style="width:90rem;"><hr style="height:1px; border-width:0 color:black; background-color:black">
 
     <!-- Litegran om Tekniksprånget -->
-    <div style="text-align:center; padding:60px; position:static;">
+    <div style="text-align:center; padding:8%; position:static;">
 
         <h3 style="font-size:30px">Vad är Tekniksprånget?</h3>
 

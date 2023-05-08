@@ -34,8 +34,8 @@ def stralningsfysik(request):
      return render(request, "stralningsfysik.html")
 
 
-def utrustning(request):
-     return render(request, "utrustning.html")
+def maskiner(request):
+     return render(request, "maskiner.html")
 
 
 def intervju(request):

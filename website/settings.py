@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-g!g_0t6eyweig01fdowvtuk0jam360eeil(8z4)e7w06un+-55
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*", "127.0.0.1", "teknikspranghemsidatest.herokuapp.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "teknikspranghemsidatest.herokuapp.com"]
 
 
 # Application definition
@@ -56,19 +56,19 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'website.urls'
 
 TEMPLATES = [
-{
-'BACKEND': 'django.template.backends.django.DjangoTemplates',
-'DIRS': [],
-'APP_DIRS': True,
-'OPTIONS': {
-'context_processors': [
-'django.template.context_processors.debug',
-'django.template.context_processors.request',
-'django.contrib.auth.context_processors.auth',
-'django.contrib.messages.context_processors.messages',
-],
-},
-},
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
 ]
 
 WSGI_APPLICATION = 'website.wsgi.application'
@@ -94,18 +94,18 @@ DATABASES = {
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-{
-'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-},
-{
-'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-},
-{
-'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-},
-{
-'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-},
+    {
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    },
 ]
 
 

@@ -76,6 +76,20 @@
         #a91fdb;
         #eacef4
 
+@media screen and (max-width: 768px) {
+        .navbar-toggler{
+           padding: 0 3px;
+        }
+    }
+
+    @media screen and (max-width: 426px) {
+        .footer-content{
+            grid-template-columns: repeat(1, 1fr);
+            padding: 3rem 2rem;
+        }
+    }
+
+
 
     </style>
 
@@ -86,13 +100,13 @@
     .footer{
         background: purple;
         color: #d3d3d3;
-        height: 300px;
+        height: 310px;
         position: relative;
     }
 
     .footer .footer-content{
         border: 1px solid purple;
-        height: 250px;
+        height: 260px;
     }
 
     .footer .footer-bottom{
@@ -118,18 +132,22 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 
    .body-section{
         display: flex;
-        margin: 5px 10px;
-        max-width: 100%
+        margin: 5px 10px ;
+        max-width: 100%;
    }
 
    .side{
-        width: 30%;
+        width: 20%;
         height: relative;
         margin: 15px 0;
-        padding: 8px;
+        padding: 8px 0 0 0;
+        position: absolut;
+
+
+
    }
    .side p{
-        padding: 2px 0;
+        padding: 2px 0 0 0 ;
    }
 
 
@@ -147,6 +165,8 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
         margin: 15px 0;
         padding: 8px;
         text-align: center;
+        position: relative;
+        left: 50%;
     }
 
     .side2 p{
@@ -172,7 +192,7 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
     }
 
     .socials li{
-        margin: 0 10px
+        margin: 0 10px;
     }
 
     .socials a{
@@ -191,8 +211,22 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
     }
 
     @media screen and (max-width: 768px) {
+        .footer-content{
+            grid-template-columns:repeat(2, 1fr);
+            gap: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 426px) {
+        .footer-content{
+            grid-template-columns: repeat(1, 1fr);
+            padding: 3rem 2rem;
+        }
+    }
 
     DET ÄR FRAM TILLS HIT SOM DET INTE FUNKAR OCH SOM JAG SKA KOLLA MER PÅ UNDER MÅNDAGEN
+
+
 
 
     @media (max-width: 770px){
@@ -203,19 +237,26 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
             width: 0;
             height: 0;
             margin: 10px 0 10px 0;
+            position: relative;
        }
        .side{
             width: 100%;
             height: 100px;
             text-align: center;
+            position: relative;
        }
        .side2{
             width: 100%;
             height: 200px;
             text-align: center;
+            position: relative;
+       }
+       #main{
+            padding: 0;
+            margin: 0;
+            max-width: 100%;
        }
     }
-
 
 
     html,
@@ -236,7 +277,7 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 
 </head>
 
-<body>
+<body id="main">
 
 <!-- Här är hela navbaren-->
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#eacef4">
@@ -287,7 +328,7 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="/stralningsfysik">Strålningsfysik Region Skåne</a>
-                    <a class="dropdown-item" href="/utrustning">Maskinerna</a>
+                    <a class="dropdown-item" href="/maskiner">Maskinerna</a>
                     <a class="dropdown-item" href="/intervju">Intervjuer med anställda</a>
                 </div>
             </li>
@@ -335,21 +376,24 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
                 <br><br><br><br><br>
                 <hr>
                 <div class="float-left">
+
                     <ul class="socials">
                         <li><a href="/kontakt"><i class="fa fa-envelope"></i></a></li>
                         <p>Maila oss!</p>
                     </ul>
-                </div>
+                        </div>
+
             </div>
 
-            <div class="main-body1" style="max-width; 50%;">
+   <!--         <div class="main-body1" style="max-width; 50%;">
                 <div class="footer-section about "></div>
                 <div class="footer-section link"></div>
                 <div class="footer-section contact-form"></div>
 
-            </div>
+            </div> -->
 
             <div class="side2">
+
                 <div class="d-flex justify-content-center">
                     <p>För dig som vill veta mer om Tekniksprånget har vi länkat alla deras sociala medier här
                         under!</p>
@@ -370,10 +414,12 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
                     <li><a href="https://www.teknikspranget.se/"><i class="fa fa-globe"></i></a></li>
                 </ul>
             </div>
+
         </div>
+
     </div>
     <div class="footer-bottom">
-        &copy; lustekningsprang.com | Designed by Tekniksprångarna2023
+        &copy; lustekningsprang.se | Designed by Tekniksprångarna2023
     </div>
 </div>
 

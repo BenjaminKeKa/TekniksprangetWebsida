@@ -10,7 +10,7 @@ urlpatterns = [
     path("webkamera", views.webkamera),
     path("fusion", views.fusion),
     path("stralningsfysik", views.stralningsfysik),
-    path("utrustning", views.utrustning),
+    path("maskiner", views.maskiner),
     path("intervju", views.intervju),
     path("kontakt", views.kontakt),
     path("website", views.website),
