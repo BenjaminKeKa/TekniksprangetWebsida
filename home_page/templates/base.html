@@ -79,6 +79,7 @@
 @media screen and (max-width: 768px) {
         .navbar-toggler{
            padding: 0 3px;
+
         }
     }
 
@@ -100,7 +101,6 @@
     .footer{
         background: purple;
         color: #d3d3d3;
-        height: 310px;
         position: relative;
     }
 
@@ -275,6 +275,143 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 
     <!--FOOTER-->
 
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        .container2{
+            max-width: 2000px;
+            margin:auto;
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style: none;
+        }
+        .footer{
+            background-color: purple;
+            padding: 40px 0 50px;
+        }
+        .footer-col{
+            width: 50%;
+            padding: 0 10px;
+        }
+        .footer-col:last-child{
+            padding: 0 0 0 500px;
+        }
+        .footer-col:first-child{
+            padding: 0 300px 0 40px;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content:'';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #eacef4;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li{
+            font-style: italic;
+            font-size: 80%;
+            width: 70%;
+
+        }
+        .footer-col p{
+            width: 80%;
+            color: #eacef4;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 0 0 0 8%;
+        }
+        .footer-col img{
+            width: 70%;
+            padding: 0 0 0 8%;
+        }
+        .footer-col hr{
+            width:80%;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #eacef4;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color: #A668B2;
+            padding-left: 8px;
+        }
+        .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            font-size: 1.6rem;
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            color: #eacef4;
+            transition: all 0.5s ease;
+            padding: 0 0 0 5%;
+        }
+        .footer-col .social-links a:hover{
+            color: #A668B2;
+
+        }
+
+        @media(max-width: 1507px){
+            .footer-col{
+                width:50%;
+                margin-bottom: 30px;
+            }
+            .footer-col:first-child{
+                padding: 0 0 5% 10%;
+            }
+            .footer-col:last-child{
+                padding: 0 0 0 10%;
+            }
+        }
+
+        @media(max-width: 574px){
+            .footer-col{
+                width: 100%;
+            }
+            .footer-col:first-child{
+                padding: 0 0 5% 10%;
+            }
+            .footer-col:last-child{
+                padding: 0 0 0 10%;
+            }
+        }
+
+    </style>
+
+    
+
 </head>
 
 <body id="main">
@@ -365,7 +502,56 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 <div class="page-wrapper"></div>
 
 
-<!--Footer-->
+
+
+<footer class="footer">
+    <div class="container2">
+        <div class="row">
+            <div class="footer-col">
+                <h4>LUS tekniksprång</h4>
+                <ul>
+                    <li>Detta är en sida skapad av tekniksprångarna på Lunds universitetssjukhus (LUS) under våren 2023.
+                        Den har ingen koppling till Tekniksprånget som företag. Sidan kommer antagligen inte att
+                        uppdateras efter att vår tid som praktikanter här är slut, men det har varit ett kul projekt som vi
+                        även hoppas ska ge er läsare något. Välkomna helt enkelt!!</li>
+                    <hr>
+                    <li><a href="/kontakt"><i class="fa fa-envelope"></i>  Maila oss!</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>om Tekniksprånget</h4>
+                <p>För dig som vill veta mer om Tekniksprånget har vi länkat alla deras sociala medier här
+                        under!</p>
+                  <img src="https://th.bing.com/th/id/OIP.gZMQsHAQhuqkMioIW-rVmQHaBq?w=338&h=78&c=7&r=0&o=5&pid=1.7"
+                     alt="">
+                <hr>
+                <div class="social-links">
+                    <a href="https://sv-se.facebook.com/teknikspranget/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/teknikspranget/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@tekniksprangetIVA"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@teknikspranget/"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/teknikspranget"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.teknikspranget.se/"><i class="fa fa-globe"></i></a>
+               </div>
+            </div>
+
+        </div>
+
+    </div>
+
+<div class="footer-bottom">
+        &copy; lustekningsprang.se | Designed by Tekniksprångarna2023
+    </div>
+</footer>
+
+
+
+
+
+
+<!--Footer--> <!--
 <div class="footer">
     <div class="footer-content">
 
@@ -383,7 +569,7 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
                     </ul>
                         </div>
 
-            </div>
+            </div>  -->
 
    <!--         <div class="main-body1" style="max-width; 50%;">
                 <div class="footer-section about "></div>
@@ -392,7 +578,7 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
 
             </div> -->
 
-            <div class="side2">
+       <!--     <div class="side2">
 
                 <div class="d-flex justify-content-center">
                     <p>För dig som vill veta mer om Tekniksprånget har vi länkat alla deras sociala medier här
@@ -422,7 +608,7 @@ DETTA FUNKADE INTE SÅ SKA KOLLA MER PÅ DET PÅ MÅNDAG
         &copy; lustekningsprang.se | Designed by Tekniksprångarna2023
     </div>
 </div>
-
+-->
 
 <!-- JAVASCRIPTET MÅSTE FINNS HÄR ELLER I VARJE HTML FIL -->
 <!-- Optional JavaScript -->
