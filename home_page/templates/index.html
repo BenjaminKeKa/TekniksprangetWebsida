@@ -6,19 +6,49 @@
 <body>
     <div style="text-align:center; padding: 60px 0; position:static;">
 
-        <h1 style="font-size:50px;">Tekniksprånget hos Region Skåne</h1>
-        <h3 style="font-size:30px">Strålningsfysiken på Lunds Universitetssjukhus</h3>
+        <h1 style="font-size:60px;font-family: calibri;">Tekniksprånget hos Region Skåne</h1>
+        <h3 style="font-size:36px:font-family: calibri;">Strålningsfysiken på Lunds Universitetssjukhus</h3>
 
         <br>
-<div class="d-flex justify-content-center">
-            <div style="position:relative; width:60rem; font-size:20px;">
-                <p>Hej OCH välkommen till våran hemsida. Vi är ju då två människor som gått tekniksprånget på Strålfysiken på Lunds
-                universitetssjukhus under våren 2023. Syftet med denna hemsidan är att nå ut till er intresserade och berätta om
-                allt det vi gjort här med tekniksprånget och vilka våra arbetsgivare är. Ni SKA vara imponerade av denna hemsidan,
-                för vi är bäst.</p>
+        <br>
+        <br>
+
+        <div class="d-flex justify-content-center">
+            <div style="width:65rem;">
+                <hr style="height:3px; border-width:0 color:#630875; background-color:#630875">
             </div>
-</div>
+        </div>
+
+        <br>
+
+        <div class="d-flex justify-content-center">
+            <div style="position:relative; width:60rem; font-size:25px;">
+                <p style="font-family: calibri;"> Välkommen till hemsidan gjort och designat av tekniksprångarna hos Region Skåne våren 2023! Vi har
+                    genomfört vår praktik på Strålningsfysiken i Lunds Universitetssjukhus igenom praktikprogrammet
+                    Tekniksprånget. Syftet med denna hemsidan är att konkret sammanfatta och kommunicera arbetet vi gjort
+                    samt verksamheten som bedrivs på vår arbetsplats och av vår arbetsgivare.
+                </p>
+                <p style="font-family: calibri;">
+                    En del av vårt uppdrag är att visa upp yrkesrollen som ingenjör och inspirera andra unga att sikta
+                    efter högre tekniska utbildningar. Nedanför kan du därmed hitta information om verksamheten på
+                    Strålningsfysiken, våra och ingenjörernas arbetsuppgifter med mera.
+                </p>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="d-flex justify-content-center">
+            <div style="width:65rem;">
+                <hr style="height:3px; border-width:0 color:#630875; background-color:#630875">
+            </div>
+        </div>
     </div>
+
+    <br>
+    <br>
+    <br>
+
     <div class="row">
         {% for home in home_page %}
          <div class="col">
@@ -64,6 +94,12 @@
             text-align:left;
             position: absolute;
         }
+        .carousel-text1 {
+            position:absolute;
+            bottom:35%;
+            left:40rem;
+            width:40rem;
+        }
 
 
         @media screen and (max-width: 998px){
@@ -106,6 +142,12 @@
             .carousel-text h1{
                 text-align: center;
             }
+            .carousel-text1 {
+                position:relative;
+                bottom:3%;
+                left:1rem;
+                width:4rem;
+            }
             carousel-caption{
                 text-align: bottom;
             }
@@ -143,12 +185,13 @@
                         <div class="carousel-text">
                             <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:50px;">Verksamheten på Strålfysiken</h1>
-                                <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
-                                av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
-                                snyggt och konkret sätt. Både för att främja tekniksprånget men också att viss upp ens
-                                kommunitiva förmågor.</p>
-                                <a href="/stralningsfysik" type="button" class="btn btn-outline-light">Nämen se här!
-                                Sikken fin frimärksbok min bäste herre har!</a>
+                                <p>Idag drabbas var tredje svensk för cancer någon gång under sitt liv. Detta gör cancer
+                                    för en av de vanligaste och mest förödande sjukdomar i samhället. Därför är
+                                    verksamheten som bedrivs i Strålningsfysiken bland de viktigaste inom den svenska
+                                    sjukvården.
+                                </p>
+                                <a href="/stralningsfysik" type="button" class="btn btn-outline-light">Läs mer om
+                                    verksamheten på Strålningsfysiken</a>
                             </div>
                         </div>
                     </div>
@@ -165,12 +208,11 @@
                         <div class="carousel-text">
                             <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:50px;">Behandlings-maskinerna på Strålfysiken</h1>
-                                <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
-                                av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
-                                snyggt och konkret sätt. Både för att främja tekniksprånget men också att viss upp ens
-                                kommunitiva förmågor.</p>
-                                <a href="/maskiner" type="button" class="btn btn-outline-light">Nämen se här!
-                                Sikken fin frimärksbok min bäste herre har!</a>
+                                <p> För en lyckad strålbehandling krävs det en maskin som kan leverera rätt dos på rätt
+                                    ställe. På Strålningsfysiken i Lund finns det 10 olika röntgenmaskiner, 2 maskiner
+                                    för brakyterapi samt diverse isotopterapi apparater.
+                                </p>
+                                <a href="/maskiner" type="button" class="btn btn-outline-light">Läs mer om strålbehandlings-maskinerna</a>
                             </div>
                         </div>
                     </div>
@@ -185,15 +227,12 @@
                             </div>
                         </div>
 
-                        <div class="carousel-text">
+                        <div class="carousel-text1">
                             <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:50px;">Om oss</h1>
-                                <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
-                                av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
-                                snyggt och konkret sätt. Både för att främja tekniksprånget men också att viss upp ens
-                                kommunitiva förmågor.</p>
-                                <a href="/om_oss" type="button" class="btn btn-outline-light">Nämen se här!
-                                Sikken fin frimärksbok min bäste herre har!</a>
+                                <p>Vilka är vi som gjort denna hemsidan och hur hamnade vi här? Detta och mer svarar vi
+                                på om oss.</p>
+                                <a href="/om_oss" type="button" class="btn btn-outline-light">Läs mer om oss</a>
                             </div>
                         </div>
                     </div>
@@ -210,12 +249,11 @@
                         <div class="carousel-text">
                             <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:50px;">Intervjuer med anställda</h1>
-                                <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten av
-                                av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
-                                snyggt och konkret sätt. Både för att främja tekniksprånget men också att viss upp ens
-                                kommunitiva förmågor.</p>
-                                <a href="/intervju" type="button" class="btn btn-outline-light">Nämen se här!
-                                Sikken fin frimärksbok min bäste herre har!</a>
+                                <p> Är du nyfiken på vad en ingenjör kan jobba med på ett sjukhus? Eller har du ögonen
+                                    på sjukvården och undrar hur det är att jobba inom den branschen? Läs då intervjuerna
+                                    med ingenjörer och sjukhusfysiker på Strålfysiken.
+                                </p>
+                                <a href="/intervju" type="button" class="btn btn-outline-light">Till intervjuerna</a>
                             </div>
                         </div>
                     </div>
@@ -233,12 +271,11 @@
                         <div class="carousel-text">
                             <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-size:50px;">3D-modellering med CAD</h1>
-                                <p>En dialog för att testa storleken på texten och hur den sammarbetar med resten
-                                av carouselen. Det är av yttersta vikt att denna informationen presenteras på ett så
-                                snyggt och konkret sätt. Både för att främja tekniksprånget men också att viss upp ens
-                                kommunitiva förmågor.</p>
-                                <a href="/fusion" type="button" class="btn btn-outline-light">Nämen se här!
-                                Sikken fin frimärksbok min bäste herre har!</a>
+                                <p> En av sakerna vi har hållit på med allra mest under vår praktik är designing i
+                                    CAD, computer-aided design. Idag är CAD tillsammans med programmering en av
+                                    ingenjörernas främsta verktyg.
+                                </p>
+                                <a href="/fusion" type="button" class="btn btn-outline-light">Läs mer om CAD</a>
                             </div>
                         </div>
                     </div>
@@ -250,35 +287,45 @@
 
         </div>
     </div>
+
     <br>
-    <div class="d-flex justify-content-center"><div style="width:90rem;"><hr style="height:1px; border-width:0 color:black; background-color:black">
+    <br>
+    <br>
 
     <!-- Litegran om Tekniksprånget -->
     <div style="text-align:center; padding:8%; position:static;">
+        <div class="d-flex justify-content-center">
+            <div style="width:65rem;">
+                <hr style="height:3px; border-width:0 color:#630875; background-color:#630875">
+            </div>
+        </div>
+        <br>
 
-        <h3 style="font-size:30px">Vad är Tekniksprånget?</h3>
+        <h3 style="font-size:36px;font-family: calibri;">Vad är Tekniksprånget?</h3>
 
         <br>
-    <div class="d-flex justify-content-center">
-            <div style="position:relative; max-width:60rem; font-size:20px;">
-                <p>Sannolikheten att du inte vet vad tekniksprånget är uppskattar vi som väldigt låg, men vi är fult
-                    medvetna att kunskap aldrig ska tas för givet. Därför tänker vi berätta lite gran om tekniksprånget
-                    här och nu. Buckle your seatbealts buckaroo, we are going into the outback</p>
-                <p>Tekniksprånget är en unik satsning där regeringen tillsammans med arbetsgivare bedriver praktikprogram
+        <div class="d-flex justify-content-center">
+            <div style="position:relative; max-width:60rem; font-size:25px;">
+                <p style="font-family: calibri;">Tekniksprånget är en unik satsning där regeringen tillsammans med arbetsgivare bedriver praktikprogram
                     för att öka intresset för ungdomar att läsa vidare till högre tekniska utbildningar. Detta görs för
                     att stärka Sveriges kompetensförsörjning och bedrivs av Kungliga Ingenjörsvetenskapsakademin, IVA.
                     Verksamheten började 2012 och har under sina 11 år tillsammans med 220 olika arbetsgivare kunnat ge
                     praktikplatser till över 6000 ungdomar varav 75% av dessa ansett att praktiken påverkat deras val av
                     en högre teknisk utbildning. </p>
-                <p>Genom en fyra månaders betald praktik på över 100 olika orter i Sverige får ungdomar chansen att
+                <p style="font-family: calibri;">Genom en fyra månaders betald praktik på över 100 olika orter i Sverige får ungdomar chansen att
                     uppleva och lära sig om ingenjörsyrket samt en breddare inblick i arbetslivet som väntar, nästan
                     oavsett ens utbildning. Man får följa med ingenjörerna på sin arbetsplats och lära sig om hur man
                     arbetar just där eller den branschen. Din tid på praktikplatsen kan variera med allt ifrån
                     studiebesök till reguljära arbetsuppgifter eller egna projekt. Det är både lärorikt </p>
             </div>
-</div>
-
-    </div></div></div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <div style="width:65rem;">
+                <hr style="height:3px; border-width:0 color:#630875; background-color:#630875">
+            </div>
+        </div>
+    </div>
 
 </body>
 
