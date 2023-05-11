@@ -14,6 +14,9 @@
     .btn-group a:hover{
         color: #eacef4;
     }
+    img{
+        max-width: 25%;
+    }
 
     @media(max-width: 600px){
         p{
@@ -35,9 +38,21 @@
             justify-content: space-around;
             flex-flow: wrap;
         }
+        .bild-collage{
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
 
         @media screen and (max-width:1200px){
             .btn btn-outline{
+                width: 40%;
+                margin-bottom: 40px;
+            }
+            .bilderna{
                 width: 40%;
                 margin-bottom: 40px;
             }
@@ -47,25 +62,6 @@
             .btn btn-outline{
                 width: 90%;
             }
-        }
-
-
-        .bild-collage{
-            width: 90%;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-flow: wrap;
-        }
-        @media screen and (max-width:1200px){
-            .bilderna{
-                width: 40%;
-                margin-bottom: 40px;
-            }
-        }
-
-        @media screen and (max-width:600){
             .bilderna{
                 width: 90%;
             }
@@ -79,16 +75,15 @@
     <h1 class="display-2">Vårt arbete</h1>
     <br>
 
-    <div class="d-flex justify-content-center" style="max-width: 100%">
-        <div class="bild-collage">
 
-            <img class="bilderna" src="{% static 'home_page/carousel-images/Dragskåpet100%färdigt.jpg' %}" style="max-width:25%" alt="">
-            <img class="bilderna" src="{% static 'home_page/project-images/webkameran/Webkamera+dator - kamera ljus.jpg' %}"
-                 style="max-width:25%" alt="">
-            <img class="bilderna" src="{% static 'home_page/carousel-images/MiniTBFusion360q.png' %}" style="max-width: 25%" alt="">
-            <img class="bilderna" src="{% static 'home_page/carousel-images/slide2.png' %}" style="max-width:25%" alt="">
+        <div class="bild-collage">
+<div class="bilderna"></div>
+            <img class="bilderna" src="{% static 'home_page/carousel-images/Dragskåpet100%färdigt.jpg' %}" alt="">
+            <img class="bilderna" src="{% static 'home_page/project-images/webkameran/Webkamera+dator - kamera ljus.jpg' %}" alt="">
+            <img class="bilderna" src="{% static 'home_page/carousel-images/MiniTBFusion360q.png' %}" alt="">
+            <img class="bilderna" src="{% static 'home_page/carousel-images/slide2.png' %}" alt="">
         </div>
-    </div>
+
     <br><br><br>
 
     <p>Under vår tid som praktikanter hos Region Skåne fick vi vara med om en massa av olika intressanta saker som sker
