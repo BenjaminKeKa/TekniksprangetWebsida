@@ -5,25 +5,27 @@
 
 
 <style>
-    h1{
-        font-size: 380%;
-        font-family: calibri;
+    .toprubrik {
+        font-size:60px;
     }
-    h2{
-        font-size: 200%;
-        font-family: calibri;
+    .underrubrik {
+        font-size:30px;
     }
 
 
-
-@media screen and (max-width: 600){
-    h1{
-        font-size: 50px;
+    @media screen and (max-width: 600px){
+        .toprubrik {
+            font-size:40px;
+            padding:0 0 10px 0;
+        }
+        .underrubrik {
+            font-size:25px;
+            font-family: calibri;
+        }
+        p {
+            font-size:20px;
+        }
     }
-    p{
-        width: 80%;
-    }
-}
 
 
 </style>
@@ -32,8 +34,9 @@
 <body>
     <div style="text-align:center; padding: 60px 0; position:static;">
 
-        <h1>Tekniksprånget hos Region Skåne</h1>
-        <h3>Strålningsfysiken på Lunds Universitetssjukhus</h3>
+        <h1 class="toprubrik">Tekniksprånget hos Region Skåne</h1>
+
+        <h3 class="underrubrik">Strålningsfysiken på Lunds Universitetssjukhus</h3>
 
         <br>
         <br>
@@ -137,13 +140,13 @@
 
             .carousel-background{
                 position: relative;
-                height: 50rem;
+                height:45rem;
                 width:20rem;
                 display: flex;
             }
             .carousel-item {
                 position: relative;
-                height:50rem;
+                height:45rem;
                 width:20rem;
             }
             .carousel-image {
