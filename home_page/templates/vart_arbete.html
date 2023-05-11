@@ -5,7 +5,7 @@
 
 <style>
     p{
-        max-width:60%;
+        width:60%;
     }
     .btn-group a{
         font-weight: bold;
@@ -15,21 +15,79 @@
         color: #eacef4;
     }
 
+    @media(max-width: 600px){
+        p{
+            width: 80%;
+        }
+    }
 
 
 </style>
+
+
+<style>
+
+        .btn-group{
+            width: 60%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+
+        @media screen and (max-width:1200px){
+            .btn btn-outline{
+                width: 40%;
+                margin-bottom: 40px;
+            }
+        }
+
+        @media screen and (max-width:600px){
+            .btn btn-outline{
+                width: 90%;
+            }
+        }
+
+
+        .bild-collage{
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+        @media screen and (max-width:1200px){
+            .bilderna{
+                width: 40%;
+                margin-bottom: 40px;
+            }
+        }
+
+        @media screen and (max-width:600){
+            .bilderna{
+                width: 90%;
+            }
+        }
+
+</style>
+
 
 <center>
 
     <h1 class="display-2">Vårt arbete</h1>
     <br>
-    <div class="d-flex justify-content-center" style="max-width: 100%">
-        <img src="{% static 'home_page/carousel-images/Dragskåpet100%färdigt.jpg' %}" style="max-width:25%" alt="">
-        <img src="{% static 'home_page/project-images/webkameran/Webkamera+dator - kamera ljus.jpg' %}"
-             style="max-width:25%" alt="">
-        <img src="{% static 'home_page/carousel-images/MiniTBFusion360q.png' %}" style="max-width: 25%" alt="">
-        <img src="{% static 'home_page/carousel-images/slide2.png' %}" style="max-width:25%" alt="">
 
+    <div class="d-flex justify-content-center" style="max-width: 100%">
+        <div class="bild-collage">
+
+            <img class="bilderna" src="{% static 'home_page/carousel-images/Dragskåpet100%färdigt.jpg' %}" style="max-width:25%" alt="">
+            <img class="bilderna" src="{% static 'home_page/project-images/webkameran/Webkamera+dator - kamera ljus.jpg' %}"
+                 style="max-width:25%" alt="">
+            <img class="bilderna" src="{% static 'home_page/carousel-images/MiniTBFusion360q.png' %}" style="max-width: 25%" alt="">
+            <img class="bilderna" src="{% static 'home_page/carousel-images/slide2.png' %}" style="max-width:25%" alt="">
+        </div>
     </div>
     <br><br><br>
 
@@ -45,11 +103,18 @@
         mer om. Det är om alla dess projekt som ni kan läsa om här. </p>
     <br><br>
 
-    <div class="btn-group">
-        <a href="/dragskapet" class="btn btn-outline">Dragskåpet</a>
-        <a href="/webkamera" class="btn btn-outline">Webkamerna och Linuxdatorn</a>
-        <a href="/fusion" class="btn btn-outline">3D-printing i CAD</a>
-        <a href="/website" class="btn btn-outline">Vår egen hemsida</a>
+    <div class="d-flex justify-content-center">
+        <div class="btn-group">
+
+            <a href="/dragskapet" class="btn btn-outline">Dragskåpet</a>
+
+            <a href="/webkamera" class="btn btn-outline">Webkamerna och Linuxdatorn</a>
+
+            <a href="/fusion" class="btn btn-outline">3D-printing i CAD</a>
+
+            <a href="/website" class="btn btn-outline">Vår egen hemsida</a>
+
+        </div>
     </div>
     <br><br><br>
 
