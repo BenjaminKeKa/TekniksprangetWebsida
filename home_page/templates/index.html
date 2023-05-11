@@ -114,6 +114,11 @@
             bottom:25%;
             left:40rem;
             width:40rem;
+        }
+        .carousel-rubrik {
+            font-size:50px;
+        }
+        .carousel-dialog {
 
         }
         .carousel-caption{
@@ -129,66 +134,44 @@
 
 
         @media screen and (max-width: 1050px){
-            #myCarousel{
-                max-width: 90%;
-                padding: 1%;
-            }
+
             .carousel-background{
                 position: relative;
-                height: 60rem;
-                width: 80%;
+                height: 50rem;
+                width:20rem;
                 display: flex;
-
             }
             .carousel-item {
-                height:80%;
-                width:200%;
                 position: relative;
+                height:50rem;
+                width:20rem;
             }
             .carousel-image {
                 position:relative;
-                max-width:40%;
-                height: relative;
-                left:5%;
+                width:16rem;
+                height:12rem;
+                left:10%;
                 top:5rem;
-
             }
-           .carousel-text {
+            .carousel-text {
                 position:relative;
-                bottom:-50%;
-                left:-1%;
-                width:0;
-                text-align:center;
-                padding: 15rem 0 8% 52%;
-
-            }
-            .carousel-text p{
-                text-align: center;
-                width: relative%;
-            }
-            .carousel-text h1{
-                text-align: center;
-                width: relative;
-            }
-            .carousel-text a{
-                width: relative;
+                height:20rem;
+                width:20rem;
+                left:0rem;
+                top:10rem;
             }
             .carousel-text1 {
                 position:relative;
-                bottom:-50%;
-                left:-1%;
-                width:40%;
-                text-align:center;
-                padding: 8rem 0 8% 52%;
-                max-width: 80%;
+                height:20rem;
+                width:20rem;
+                left:0rem;
+                top:10rem;
             }
-            carousel-caption{
-                text-align: bottom;
+            .carousel-rubrik {
+                font-size:20px;
             }
-            .carousel-inner{
-                width:100%;
-
-                background-color: blue;
+            .carousel-dialog {
+                font-size:15px
             }
 
         }
@@ -222,10 +205,11 @@
                             </div>
                         </div>
 
+
                         <div class="carousel-text">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 style="font-size:50px;">Verksamheten på Strålfysiken</h1>
-                                <p>Idag drabbas var tredje svensk av cancer någon gång under sitt liv. Detta gör cancer
+                            <div class="carousel-caption">
+                                <h1 class="carousel-rubrik">Verksamheten på Strålfysiken</h1>
+                                <p class="carousel-dialog">Idag drabbas var tredje svensk av cancer någon gång under sitt liv. Detta gör cancer
                                     till en av de vanligaste och mest förödande sjukdomar i samhället. Därför är
                                     verksamheten som bedrivs på Strålningsfysiken bland de viktigaste inom den svenska
                                     sjukvården.
@@ -246,9 +230,9 @@
                         </div>
 
                         <div class="carousel-text">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 style="font-size:50px;">Behandlings-maskinerna på Strålfysiken</h1>
-                                <p> För en lyckad strålbehandling krävs det en maskin som kan leverera rätt dos på rätt
+                            <div class="carousel-caption">
+                                <h1 class="carousel-rubrik">Behandlings-maskinerna på Strålfysiken</h1>
+                                <p class="carousel-dialog"> För en lyckad strålbehandling krävs det en maskin som kan leverera rätt dos på rätt
                                     ställe. På Strålningsfysiken i Lund finns det 10 olika röntgenmaskiner, 2 maskiner
                                     för brakyterapi samt diverse isotopterapi apparater.
                                 </p>
@@ -268,9 +252,9 @@
                         </div>
 
                         <div class="carousel-text1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 style="font-size:50px;">Om oss</h1>
-                                <p>Vilka är vi som gjort denna hemsidan och hur hamnade vi här? Detta och mer svarar vi
+                            <div class="carousel-caption">
+                                <h1 class="carousel-rubrik">Om oss</h1>
+                                <p class="carousel-dialog">Vilka är vi som gjort denna hemsidan och hur hamnade vi här? Detta och mer svarar vi
                                 på om oss.</p>
                                 <a href="/om_oss" type="button" class="btn btn-outline-light">Läs mer om oss</a>
                             </div>
@@ -287,9 +271,9 @@
                         </div>
 
                         <div class="carousel-text">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 style="font-size:50px;">Intervjuer med anställda</h1>
-                                <p> Är du nyfiken på vad en ingenjör kan jobba med på ett sjukhus? Eller har du ögonen
+                            <div class="carousel-caption">
+                                <h1 class="carousel-rubrik">Intervjuer med anställda</h1>
+                                <p class="carousel-dialog"> Är du nyfiken på vad en ingenjör kan jobba med på ett sjukhus? Eller har du ögonen
                                     på sjukvården och undrar hur det är att jobba inom den branschen? Läs då intervjuerna
                                     med ingenjörer och sjukhusfysiker på Strålfysiken.
                                 </p>
@@ -309,9 +293,9 @@
                         </div>
 
                         <div class="carousel-text">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 style="font-size:50px;">3D-modellering med CAD</h1>
-                                <p> En av sakerna vi har hållit på med allra mest under vår praktik är designing i
+                            <div class="carousel-caption">
+                                <h1 class="carousel-rubrik">3D-modellering med CAD</h1>
+                                <p class="carousel-dialog"> En av sakerna vi har hållit på med allra mest under vår praktik är designing i
                                     CAD, computer-aided design. Idag är CAD tillsammans med programmering en av
                                     ingenjörernas främsta verktyg.
                                 </p>
@@ -346,7 +330,7 @@
         <br>
         <div class="d-flex justify-content-center">
             <div style="position:relative; max-width:60rem; font-size:25px;">
-                <p style="font-family: calibri;">Tekniksprånget är en unik satsning där regeringen tillsammans med arbetsgivare bedriver praktikprogram
+                <p class="dialogruta">Tekniksprånget är en unik satsning där regeringen tillsammans med arbetsgivare bedriver praktikprogram
                     för att öka intresset för ungdomar att läsa vidare till högre tekniska utbildningar. Detta görs för
                     att stärka Sveriges kompetensförsörjning och bedrivs av Kungliga Ingenjörsvetenskapsakademin, IVA.
                     Verksamheten började 2012 och har under sina 11 år tillsammans med 220 olika arbetsgivare kunnat ge
