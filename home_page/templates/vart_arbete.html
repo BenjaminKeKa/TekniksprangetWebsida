@@ -100,7 +100,7 @@
     <p>Utöver att få följa med ingenjörerna på servicar och underhåll av maskinerna har vi parallellt jobbat med en del
         egna projekt. En del av projekten är på uppdrag av ingenjörerna, saker som behövt göras men som de inte haft tid
         med. Andra projekt har vi startat på eget initiativ, något som vi märkt behövts här eller som vi ville lära oss
-        mer om. Det är om alla dess projekt som ni kan läsa om här. </p>
+        mer om. Det är här ni kan läsa om projekten vi gjort under vår praktik. </p>
     <br><br>
 
     <div class="d-flex justify-content-center">
@@ -120,3 +120,216 @@
 
 </center>
 {% endblock %}
+
+<!-- </style>
+    <style>
+        .carousel-background {
+            position: relative;
+            height: 40rem;
+            max-width: 60rem;
+            display: flex;
+            justify-content: center;
+            background-color:gray;
+            border-radius:3%;
+        }
+        .carousel-item {
+            height:40rem;
+            width:60rem;
+            position: relative;
+        }
+        .carousel-image {
+            position:relative;
+            max-width:30rem;
+            height:22.5rem;
+            left:0%;
+            top:5rem;
+        }
+        .carousel-text {
+            position:absolute;
+            bottom:0%;
+            left:40rem;
+            width:40rem;
+
+        }
+        .carousel-caption{
+            text-align:left;
+            position: absolute;
+        }
+        .carousel-text1 {
+            position:absolute;
+            bottom:35%;
+            left:40rem;
+            width:40rem;
+        }
+
+
+        @media screen and (max-width: 998px){
+            #myCarousel{
+                max-width: 90%;
+                padding: 1%;
+            }
+            .carousel-background{
+                position: relative;
+                height: 60rem;
+                width: 80%;
+                display: flex;
+
+            }
+            .carousel-item {
+                height:80%;
+                width:200%;
+                position: relative;
+            }
+            .carousel-image {
+                position:relative;
+                max-width:40%;
+                height: relative;
+                left:5%;
+                top:5rem;
+
+            }
+           .carousel-text {
+                position:relative;
+                bottom:-50%;
+                left:-1%;
+                width:40%;
+                text-align:center;
+                padding: 15rem 0 8% 52%;
+                max-width: 80%;
+            }
+            .carousel-text p{
+                text-align: center;
+            }
+            .carousel-text h1{
+                text-align: center;
+            }
+            .carousel-text1 {
+                position:relative;
+                bottom:-50%;
+                left:-1%;
+                width:40%;
+                text-align:center;
+                padding: 8rem 0 8% 52%;
+                max-width: 80%;
+            }
+            carousel-caption{
+                text-align: bottom;
+
+        }
+
+    </style>
+
+
+<center>
+    <h1 class="display-2">Vårt arbete</h1>
+    <br>
+    <div class="d-flex justify-content-center">
+        <div class="carousel-background">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-button_boxes">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="carousel-image">
+                            <div class="d-flex justify-content-center">
+                                <img src="{% static 'home_page/carousel-images/Dragskåpet100%färdigt.jpg' %}"
+                                     style="carousel-image; border-radius:5%" class="img-fluid d-block w-100"
+                                     alt="Image not found">
+                            </div>
+                        </div>
+
+                        <div class="carousel-text">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1 style="font-size:50px;">Verksamheten på Strålfysiken</h1>
+                                <p>Idag drabbas var tredje svensk för cancer någon gång under sitt liv. Detta gör cancer
+                                    för en av de vanligaste och mest förödande sjukdomar i samhället. Därför är
+                                    verksamheten som bedrivs i Strålningsfysiken bland de viktigaste inom den svenska
+                                    sjukvården.
+                                </p>
+                                <a href="/stralningsfysik" type="button" class="btn btn-outline-light">Läs mer om
+                                    verksamheten på Strålningsfysiken</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-image">
+                            <div class="d-flex justify-content-center">
+                                <img src="{% static 'home_page/project-images/webkameran/Webkamera+dator - kamera ljus.jpg' %}"
+                                     style="carousel-image; border-radius:5%" class="img-fluid d-block w-100"
+                                     alt="Image not found">
+                            </div>
+                        </div>
+
+                        <div class="carousel-text">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1 style="font-size:50px;">Verksamheten på Strålfysiken</h1>
+                                <p>Idag drabbas var tredje svensk för cancer någon gång under sitt liv. Detta gör cancer
+                                    för en av de vanligaste och mest förödande sjukdomar i samhället. Därför är
+                                    verksamheten som bedrivs i Strålningsfysiken bland de viktigaste inom den svenska
+                                    sjukvården.
+                                </p>
+                                <a href="/stralningsfysik" type="button" class="btn btn-outline-light">Läs mer om
+                                    verksamheten på Strålningsfysiken</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-image">
+                            <div class="d-flex justify-content-center">
+                                <img src="{% static 'home_page/carousel-images/MiniTBFusion360q.png' %}"
+                                     style="carousel-image; border-radius:5%" class="img-fluid d-block w-100"
+                                     alt="Image not found">
+                            </div>
+                        </div>
+
+                        <div class="carousel-text">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1 style="font-size:50px;">Verksamheten på Strålfysiken</h1>
+                                <p>Idag drabbas var tredje svensk för cancer någon gång under sitt liv. Detta gör cancer
+                                    för en av de vanligaste och mest förödande sjukdomar i samhället. Därför är
+                                    verksamheten som bedrivs i Strålningsfysiken bland de viktigaste inom den svenska
+                                    sjukvården.
+                                </p>
+                                <a href="/stralningsfysik" type="button" class="btn btn-outline-light">Läs mer om
+                                    verksamheten på Strålningsfysiken</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-image">
+                            <div class="d-flex justify-content-center">
+                                <img src="{% static 'home_page/carousel-images/slide2.png' %}"
+                                     style="carousel-image; border-radius:5%" class="img-fluid d-block w-100"
+                                     alt="Image not found">
+                            </div>
+                        </div>
+
+                        <div class="carousel-text">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1 style="font-size:50px;">Verksamheten på Strålfysiken</h1>
+                                <p>Idag drabbas var tredje svensk för cancer någon gång under sitt liv. Detta gör cancer
+                                    för en av de vanligaste och mest förödande sjukdomar i samhället. Därför är
+                                    verksamheten som bedrivs i Strålningsfysiken bland de viktigaste inom den svenska
+                                    sjukvården.
+                                </p>
+                                <a href="/stralningsfysik" type="button" class="btn btn-outline-light">Läs mer om
+                                    verksamheten på Strålningsfysiken</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
