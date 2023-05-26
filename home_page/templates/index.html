@@ -115,7 +115,26 @@
             left:5%;
             top:10rem;
         }
+        .carousel-image2{
+            position:relative;
+            max-width:40rem;
+            height:30rem;
+            left:5%;
+            top:10rem;
+        }
         .carousel-text {
+            position:absolute;
+            bottom:25%;
+            left:40rem;
+            width:40rem;
+        }
+        .carousel-text3{
+            position:absolute;
+            bottom:25%;
+            left:40rem;
+            width:40rem;
+        }
+        .carousel-text2{
             position:absolute;
             bottom:25%;
             left:40rem;
@@ -123,9 +142,6 @@
         }
         .carousel-rubrik {
             font-size:50px;
-        }
-        .carousel-dialog {
-
         }
         .carousel-caption{
             text-align:left;
@@ -139,48 +155,140 @@
         }
 
 
-        @media screen and (max-width: 1050px){
+        @media screen and (max-width:700px){
+            .carousel-text1{
+                position: relative;
+                height: relative;
+                width: 70%;
+                left: 15%;
+                top: 50%;
+            }
+            .carousel-text3{
+                position: relative;
+                height: 40%;
+                width: 70%;
+                left: 15%;
+                top: 8rem;
+            }
+            .carousel-text2{
+                position: relative;
+                height: 40%;
+                width: 70%;
+                left: 15%;
+                top: 10rem;
+            }
+        }
+
+        @media(min-width: 700px) and (max-width:1050px){
+            .carousel-text1 {
+                position:relative;
+                height:relative;
+                width:70%;
+                left:15%;
+                top:60%;
+            }
+             .carousel-text3{
+                position: relative;
+                height: 40%;
+                width: 70%;
+                left: 15%;
+                top: 10rem;
+            }
+             .carousel-text2{
+                position: relative;
+                height: 40%;
+                width: 25rem;
+                left: 10%;
+                top: 8rem;
+            }
+            .carousel-image2{
+                position: relative;
+                width: 40rem;
+                height: 12rem;
+                left: 15%;
+                top: 5rem;
+                max-width: 100%;
+            }
+        }
+
+       @media (min-width: 1000px) and (max-width: 1280px){
+            .carousel-text1 {
+                position:relative;
+                height:relative;
+                width:70%;
+                left:15%;
+                top:70%;
+            }
+             .carousel-text3{
+                position: relative;
+                height: 40%;
+                width: 70%;
+                left: 15%;
+                top: 14rem;
+            }
+            .carousel-text2{
+                position: relative;
+                height: 40%;
+                width: 40rem;
+                left: 5%;
+                top: 10rem;
+            }
+            .carousel-image2{
+                position: relative;
+                width: 60rem;
+                height: 12rem;
+                left: 15%;
+                top: 5rem;
+                max-width: 100%;
+            }
+       }
+
+
+        @media screen and (max-width: 1280px){
 
             .carousel-background{
                 position: relative;
-                height:50rem;
-                width:20rem;
+                height:80%;
+                width:80%;
                 display: flex;
             }
             .carousel-item {
                 position: relative;
                 height:50rem;
-                width:20rem;
+                width:100%;
             }
             .carousel-image {
                 position:relative;
-                width:16rem;
+                width:70%;
                 height:12rem;
-                left:10%;
+                left:20%;
                 top:5rem;
+                max-width: 60%;
+            }
+            .carousel-image2{
+                position: relative;
+                width: 70%;
+                height: 12rem;
+                left: 15%;
+                top: 5rem;
+                max-width: 100%;
             }
             .carousel-text {
                 position:relative;
-                height:20rem;
-                width:20rem;
-                left:0rem;
+                height:40%;
+                width:70%;
+                left:15%;
                 top:15rem;
             }
-            .carousel-text1 {
-                position:relative;
-                height:20rem;
-                width:20rem;
-                left:0rem;
-                top:5rem;
-            }
             .carousel-rubrik {
-                font-size:20px;
+                font-size:130%;
             }
             .carousel-dialog {
                 font-size:15px
             }
 
         }
+
 
     </style>
 
@@ -271,14 +379,14 @@
 
 
                     <div class="carousel-item">
-                        <div class="carousel-image">
+                        <div class="carousel-image2">
                             <div class="d-flex justify-content-center">
                                 <img src="{% static 'home_page/carousel-images/RegionSkåne.jpg' %}" style="carousel-image;
                                 border-radius:5%" class="img-fluid d-block w-100" alt="Image not found">
                             </div>
                         </div>
 
-                        <div class="carousel-text">
+                        <div class="carousel-text2">
                             <div class="carousel-caption">
                                 <h1 class="carousel-rubrik">Intervjuer med anställda</h1>
                                 <p class="carousel-dialog"> Är du nyfiken på vad en ingenjör kan jobba med på ett sjukhus? Eller har du ögonen
@@ -300,7 +408,7 @@
                             </div>
                         </div>
 
-                        <div class="carousel-text">
+                        <div class="carousel-text3">
                             <div class="carousel-caption">
                                 <h1 class="carousel-rubrik">3D-modellering med CAD</h1>
                                 <p class="carousel-dialog"> En av sakerna vi har hållit på med allra mest under vår praktik är arbete i
