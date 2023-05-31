@@ -2,13 +2,14 @@
 
 
 {% block content %}
+{% load static %}
 
 <style>
     .foundation {
         font-family:calibri;
         position:relative;
         width:70rem;
-        height:200rem;
+        height:350rem;
         text-align:center;
     }
     .text-container {
@@ -24,7 +25,6 @@
     <div class="foundation">
 
         <h1 style="">Behandlingsmaskinerna på strålfysiken</h1>
-
         <br>
 
         <div class="text-container">
@@ -49,16 +49,14 @@
                 strålkällan är utanför kroppen och intern strålbehandling där strålkällan placeras invid eller i tumören.
                 Idag behandlas de allra flesta patienterna på Strålningsfysiken med extern behandling.
             </p>
-        </div>
+        </div> <!-- Intro info -->
 
         <br>
-
         <div class="d-flex justify-content-center">
             <div style="width:80em;">
                 <hr style="height:3px; border-width:0 color:#630875; background-color:#630875">
             </div>
         </div>
-
         <br><br><br>
 
         <h1 style="">Behandlingsmaskiner med externa strålkällor</h1>
@@ -66,28 +64,107 @@
         <br>
 
         <div class="text-container">
+            <p> På Strålningsfysiken finns det 10 maskiner som har strålkällan och därmed behandlingen externt var de i
+                sin tur kan delas upp i två typer av maskiner, TomoTherapy och TrueBeam. Båda typer av maskiner använder
+                sig av en extern strålkälla och integrerad bildtagningsteknik, två skillnader är maskinernas rörelse
+                samt strålfältets form och därmed vilka typer av cancer som de lämpar sig bäst att behandla.
+            </p>
+            <br>
+            <h2 style="text-align:center;">TomoTherapy</h2>
+            <br>
 
+            <div class="d-flex justify-content-center">
+                <img src="{% static 'home_page/machine-images/Radixact.jpg' %}" alt="Bild på Isotopterapi" style="width:25rem;
+                height:25rem;">
+            </div>
+            <div class="d-flex justify-content-center">
+            <div style="width:30rem"> <p style="font-style:italic;">Bild på behandlingsmaskinen Radixact</p></div>
+            </div>
+            <p> TomoTherapy är strålbehandling som kombinerar en linjäraccelerator med CT-bildtagning. De har en 360
+                graders rotation och har på så sätt inte samma begränsningar som en TB. De har även flyttbara britsar i
+                3 led, likt de nyaste modellerna av TB. Detta bedrar till att hålla koll p dosen och minskar på så sätt
+                stråldosen till frisk vävnad. TomoTherapy bygger på tre huvudprinciper - första är daglig CT-bildtagning
+                som är integrerad i behandlingsprocessen. Den andra är den obegränsade rotationen och MLC bladen som
+                tillsammans kan maximera dosen till target och minimera den till frisk vävnad. MLC bladen i TomoTherapy
+                har, till skillnad från TB, bara två lägen - inne eller ute. Den tredje huvudprincipen är bild-guidad
+                leverering av strålning. TomoTherapy kan leverera strålningen på två sätt - spiralformat genom metoden
+                TomoHelical och från fasta vinklar genom TomoDirect. Det förstnämnda är bra på att behandla långa
+                volymer och targets, då den klarar detta utan att bryta det longitudinella fältet. Här strålar alltså
+                maskinen under tiden som den snurrar runt target. TomoDirekt strålar däremot endast i statiska fält,
+                vilket är bättre för mindre eller mer kompakta tumörer.
+            </p>
+            <p> Den tidigaste versionen av behandlingsmaskin med TomoTherapy kallas Tomo. Denna hade MVCT bildtagning.
+                Detta har dock utvecklats och den senaste versionen, Radixact har kVCT bildtagning. KVCT (eller ClearRT
+                som TomoTherapy kallar det) ger mer högupplösta bilder vilket gör det lättare att skilja tumör från
+                friska vävnad. Detta ger även högre precision under själva behandlingen då bildtagningen är integrerad
+                i behandlingen. KVCT bildtagning även under förberedelsefasen kan hjälpa läkarna att rita ut tumör och
+                riskorgan mer exakt, men det bidrar också till att läkarna kan fatta bättre beslut angående en patients
+                behandling.
+            </p>
+            <p> Syncrony är en ny teknik lanserad tillsammans med radixacten och består både av hård- och mjukvareteknologi.
+                Den ska ge personlig anpassning av strålbehandlingen i realtid genom synkronisering av strålfältets och
+                tumörens position under behandlingen. Genom kVCT bildtagningen kan den notera både yttre och inre
+                rörelser som påverkar tumörens position och genom detta anpassa strålfältet under behandlingens gång.
+                Detta gör hela behandlingen mycket mer precis och personlig.
+            </p>
+        </div> <!-- Tomo -->
+        <br><br><br>
 
+        <div class="text-container">
+            <h2 style="text-align:center;">TrueBeam</h2>
+            <div class="d-flex justify-content-center">
+                <img src="{% static 'home_page/machine-images/TRUEBEAMVARIAN.jpg' %}" alt="Bild på Isotopterapi" style="width:30rem;
+                height:22.5rem;">
+            </div>
+            <div class="d-flex justify-content-center">
+            <div style="width:30rem"> <p style="font-style:italic;">Bild på behandlingsmaskinen TrueBeam</p></div>
+            </div>
+            <p> TrueBeam även kallad TB är en klassisk linjäraccelerator tillverkad av Varian. Sedan lanseringen 2010 är
+                det Varians mest sålda maskin och finns på tusentals kliniker världen över. Grundprincipen i en linacc
+                är att elektroner skjuts ut av en gun. Dessa kommer sedan att accelereras med hjälp av radiovågor
+                genererade av en klystron. Elektronerna kommer att färdas genom ett acceleratorrör och böjs sedan av med
+                hjälp av ett antal böjmagneter. Elektronerna träffar därefter ett target. Detta target består vanligtvis
+                av Wollfram. När elektronerna träffar wolframet kommer det genom växelverkan att skapas energi i form av
+                fotoner. Det är dessa som är strålningen. Fotonstrålningen kommer sedan att formas med hjälp av olika
+                blyplattor och till sist MLC (MultiLeafCollimator). MLC består av massor av små blyblad som kontrollerat
+                rör sig för att blockera och forma strålningen efter tumörens form i just den vinkeln.
+            </p>
+            <p> TB har ett ytscanning- och bildåtergivningssytem som kallas Catalyst. Detta skannar av ytan på patienten
+                vilket dels underlättar vid uppläggning – genom ett färgkorrdinerat system projicerat på patienten kan
+                du se precis hur patienten måste flytta sig för att ligga optimalt för den bestämda behandlningen. Dels
+                möjliggör detta en behandlingsteknik kallad gating. Gating är andningsreglerad strålbehandling -
+                bestrålning endast vid inandning. Tack vare Catalyst kan maskinen avgöra läget på patientens bröstkorg
+                och på så sätt avgöra om den kan stråla eller inte. Om patienten andas ut innan en viss delbehandling
+                är färdig. Kommer maskinen automatiskt att bryta strålning. Catalyst kan även under vanlig behandling
+                skanna av hur patienten ligger i förhållande till behandlingsplanen. Skulle detta skilja för mycket
+                kommer maskinen bryta strålningen även här.
+            </p>
+            <p> TB har ett statiskt fält på max 40 x 40 cm. Ska man behandla tumörer som är större än detta kommer det
+                behövas två olika uppläggningar och alltså mer än dubbla behandlingstiden. Då är TomoTherapy ett bättre
+                alternativ. Även TB kan behandla samtidigt som gantryt roterar, denna metod kallas här för ARC. Dock är
+                det fortfarande endast fältet på 40 x 40 som kan behandlas. En nackdel med ARC är också att TB endast
+                kan röra sig 180 grader åt varje håll, alltså en rörlighet på max. 360 grader, vilket kommer att begränsa
+                behandlingsplanerna något. Den vanligaste behandlingen på TB är dock från fasta vinklar, vilket också är
+                den behandlingsteknik som de är bäst på.
 
-        </div>
+            </p>
+        </div> <!-- TB -->
 
-        <br>
-
+        <br><br><br>
         <div class="d-flex justify-content-center">
             <div style="width:80em;">
                 <hr style="height:3px; border-width:0 color:#630875; background-color:#630875">
             </div>
         </div>
-
         <br><br><br>
 
         <h1 class="">Behandlingsmaskiner med interna strålkällor</h1>
         <br>
+
         <div class="text-container">
             <h2 style="text-align:center;">Isotopterapi</h2> <br>
-            <p> Isotopterapi (även kallad molekylär strålbehandling) är också en form av strålbehandling mot cancer, men
-                det fungerar på att helt annat sätt än de externa strålbehandlingarna på TB och Radixacten. Här får
-                patienten istället ett radioaktivt ämne antingen intravenöst eller oralt. Det radioaktiva ämnet kommer
+            <p> Isotopterapi (även kallad molekylär strålbehandling) är också en form av strålbehandling mot cancer. Här
+                får patienten istället ett radioaktivt ämne antingen intravenöst eller oralt. Det radioaktiva ämnet kommer
                 sedan att färdas via blodomloppet och den naturliga ämnesomsättningen till målorganet eller vävnaden, i
                 de flesta fallen en cancertumör.
             </p>
@@ -99,22 +176,27 @@
                 behandling. Det hittas hela tiden allt fler och specifika markörämnen, vilket gör isotopterapi till en
                 allt vanligare behandling.
             </p>
-            <p> Isotopterapi används både som diagnostikmetod och som behandling. Vid avbildningsundersökningarna före
+            <p> Isotopterapi används i syfte av både diagnostik och behandling. Vid avbildningsundersökningarna före
                 behandling använd samma markörämne som vid behandling, fast med ett mindre radioaktivt ämne kopplat till
                 sig. Detta för att se hur tumören absorberar strålningen och hur strålningen sprids till omkringliggande
-                vävnad och organ. Utifrån detta kan man sedan beräkna behandlingsdosen och dess effekt.
+                vävnader och organ. Utifrån detta kan man sedan beräkna behandlingsdosen och dess effekt.
             </p>
-            <p> Cancer i sköldkörteln är det som idag står för flest isotopbehandlingar. Isotopterapi tillhör
+            <p> Isotopterapi används idag allra mest inom behandlingen mot sköldkörtelcancer. Isotopterapi tillhör
                 standardbehandlingen för just denna typ av cancer.  Behandlingen är även vanlig att använda för palliativ
-                behandling av metastaser i skelettet, men kan såklart användas för andra behandlingar också.
+                behandling av metastaser i skelettet, men kan även användas för andra behandlingar också.
             </p>
             <p> Den största skillnaden mellan isotopbehandling och “vanlig” extern strålbehandling är att efter
                 isotopterapi kommer patienten fortsätta stråla några timmar/dager beroende på det injicerade preparatets
-                halveringstid (dock ingen jättehög stråldos). Under extern strålbehandling så försvinner strålningen i
+                halveringstid. Dock är det en väldigt svag strålning. Under extern strålbehandling så försvinner strålningen i
                 samma sekund som maskinen stannar och varken rummet eller patienten kommer att stråla något efter behandling.
             </p>
+        </div> <!--Isotopterapi  -->
+        <img src="{% static 'home_page/machine-images/Isotopterapi.gif' %}" alt="Bild på Isotopterapi">
+        <div class="d-flex justify-content-center">
+            <div style="width:30rem"> <p style="font-style:italic;">Bild på hur isotopterapi fungerar</p></div>
         </div>
-        <br><br>
+        <br><br><br><br><br>
+
         <h2 style="text-align:center;">Brakyterapi</h2> <br>
         <div class="text-container">
             <p> Brachyterapi, även kallad “inre strålbehandling” är en behandling av cancer om går ut på att en
@@ -153,7 +235,7 @@
                 bättre efterhand som 3D-avbildning, bildtagningssystem och dosplaneringssystem tillkommit sedan
                 1900-talets mitt.
             </p>
-        </div>
+        </div> <!--Brakyterapi  -->
 
     </div>
 </div>
